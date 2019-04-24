@@ -1,3 +1,6 @@
+License from https://github.com/asciidoctor/jekyll-asciidoc-quickstart,
+which was the basis for this.
+
 .The MIT License
 ....
 Copyright (C) 2015-2016 John Ericksen and the Asciidoctor Project
