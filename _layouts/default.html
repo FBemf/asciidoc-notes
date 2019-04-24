@@ -7,14 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{page.title}}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="author" content="Your name goes here">
-    <meta name="copyright" content="Maybe consider a Creative Commons license">
+    <meta name="author" content="Felipe">
+    <meta name="copyright" content="CC BY-NC 4.0">
     <link rel="stylesheet" href="{{page.root}}css/foundation.css">
     <link rel="stylesheet" href="{{page.root}}css/font-awesome.css">
     <link rel="stylesheet" href="{{page.root}}css/coderay.css">
     <link rel="stylesheet" href="{{page.root}}css/asciidoctor.css">
     <script src="{{page.root}}js/vendor/modernizr.js"></script>
     <script src="{{page.root}}js/toc.js"></script>
+    <script type="text/x-mathjax-config" src="{{page.root}}js/mathjax_conf.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          messageStyle: "none",
+          tex2jax: {
+            inlineMath: [["\\(", "\\)"]],
+            displayMath: [["\\[", "\\]"]],
+            ignoreClass: "nostem|nolatexmath"
+          },
+          asciimath2jax: {
+            delimiters: [["\\$", "\\$"]],
+            ignoreClass: "nostem|noasciimath"
+          },
+          TeX: { equationNumbers: { autoNumber: "none" } }
+        });
+    </script>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js">
+    </script>
 </head>
 <body>
 
@@ -48,25 +70,31 @@
 
     <!-- End Main Content -->
 
+
     <!-- Sidebar -->
 
     <aside class="large-3 columns">
-
+      <div id="posts">
         <h4>Posts</h4>
-        <ul id="posts" class="posts nav">
-            {% for post in site.posts limit: 5 %}
-            <li><a href=".{{ post.url }}">{{ post.navtitle }}</a></li>
-            {% endfor %}
-        </ul>
-
+        <input class="search" placeholder="Filter Posts" />
+        <br /><br />
         <div class="panel">
-            <h5>Featured</h5>
-
-            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon
-                nulla pork belly cupidatat meatloaf cow.</p>
+          <ul class="list">
+            <li><a href="{{page.root}}" class="post">Home</a></li>
+            {% for post in site.posts %}
+            <li><a href=".{{ post.url }}" class="post">{{ post.navtitle }}</a></li>
+            {% endfor %}
+          </ul>
         </div>
-
+      </div>
     </aside>
+
+    <!-- Script -->
+    <script>
+      var userList = new List('posts', {
+        valueNames: [ 'post' ]
+      });
+    </script>
 
     <!-- End Sidebar -->
 </div>
@@ -81,7 +109,18 @@
         <hr>
         <div class="row">
             <div class="large-12 columns">
-                <p>Footer</p>
+                <p>(c) Felipe Bemfica, 2019.<br>
+                  Licenced under
+                  <a rel="license"
+                    href="http://creativecommons.org/licenses/by-nc/4.0/">
+                    CC BY-NC 4.0
+                  </a><br>
+                  <a rel="license"
+                    href="http://creativecommons.org/licenses/by-nc/4.0/">
+                    <img alt="Creative Commons Licence" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
+                  </a>
+                </p>
             </div>
         </div>
     </div>
