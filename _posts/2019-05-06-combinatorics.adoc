@@ -2,7 +2,10 @@
 :showtitle:
 :page-navtitle: MATH 239: Combinatorics
 :page-root: ../../../
+:toc:
 :stem:
+
+== May 6th: Intro
 
 We're gonna do 5 weeks of Enumeration and 7 weeks of Graph Theory.
 
