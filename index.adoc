@@ -13,7 +13,7 @@ I set it up because I wanted a better way to have my notes around.
 Asciidoc struck me as a really neat markup
 -- all the hygeine of Markdown, all the power of LaTeX.
 
-I mean hell, with the power of Asciimath,
+I mean heck, with the power of Asciimath,
 `prod _(i=x) ^(x^2) 3 phi i " and " V uu U sube oo` turns into:
 
 [stem]
