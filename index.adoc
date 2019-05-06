@@ -14,7 +14,7 @@ Asciidoc struck me as a really neat markup
 -- all the hygeine of Markdown, all the power of LaTeX.
 
 I mean heck, with the power of Asciimath,
-`prod _(i=x) ^(x^2) 3 phi i " and " V uu U sube oo` turns into:
+`prod _(i=x) \^(x\^2) 3 phi i " and " V uu U sube oo` turns into:
 
 [stem]
 ++++
