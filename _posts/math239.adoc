@@ -7,8 +7,6 @@
 
 == May 6th: Intro
 
-First lesson in the course.
-
 We're gonna do 5 weeks of Enumeration and 7 weeks of Graph Theory.
 
 The typical Enumeration question is "How many elements of a set stem:[S] of
