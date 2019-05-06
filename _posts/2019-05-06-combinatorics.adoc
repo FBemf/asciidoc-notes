@@ -1,6 +1,6 @@
 = MATH 239: Combinatorics
 :showtitle:
-:page-navtite: MATH 239: Combinatorics
+:page-navtitle: MATH 239: Combinatorics
 :page-root: ../../../
 :stem:
 
