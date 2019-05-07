@@ -1,6 +1,6 @@
 = CS 251: Computer Architecture
 :showtitle:
-:page-navtitle: MATH 239: Combinatorics
+:page-navtitle: CS 251: Computer Archiecture
 :page-root: .
 :toc:
 :stem:
