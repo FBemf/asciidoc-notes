@@ -11,8 +11,10 @@ This course is about making compilers.
 We start off bare hardware and build up to a C-like language.
 Our hardware is a simulated MIPS machine.
 
-[options="header"]
+[cols="2", options="header"]
 |===
+
+|Type |Meaning
 
 |Bit
 |1 or 0
