@@ -81,7 +81,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-
         <div class="panel">
           <ul class="list">
             <li><a href="{{page.root}}" class="post">Home</a></li>
-            {% for post in site.posts %}
+            {% for post in site.pages %}
             <li><a href=".{{ post.url }}" class="post">{{ post.navtitle }}</a></li>
             {% endfor %}
           </ul>
