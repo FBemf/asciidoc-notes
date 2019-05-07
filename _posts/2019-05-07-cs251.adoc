@@ -15,3 +15,27 @@ and stem:[*] instead of stem:[vv].
 stem:[not] stays the same. That's about it.
 
 We also use stem:[bar A] for the negation of stem:[A].
+
+Basically:
+
+[options:"header"]
+|===
+|stem:[X] |stem:[Y] |stem:[Z] |stem:[F] |stem:[G] |stem:[bar G]
+
+|0 |0 |0 |0 |1 |0 |
+
+|0 |0 |0 |0 |1 |0 |
+
+|0 |1 |0 |0 |1 |0 |
+
+|0 |1 |1 |0 |1 |0 |
+
+|1 |0 |0 |0 |1 |0 |
+
+|1 |0 |1 |1 |1 |0 |
+
+|1 |1 |0 |1 |1 |0 |
+
+|1 |1 |1 |1 |0 |1 |
+
+|=== 
