@@ -1,0 +1,27 @@
+= CS 241: Sequential Programs
+:showtitle:
+:page-navtitle: CS 241: Sequential Programs
+:page-root: ../../../
+:toc:
+:stem:
+
+== May 7th: Intro
+
+This course is about making compilers.
+We start off bare hardware and build up to a C-like language.
+Our hardware is a simulated MIPS machine.
+
+[options="header"]
+|===
+
+| Bit
+| 1 or 0
+
+| Nibble
+| 4 bits
+
+| Byte
+| 8 bits
+
+| Word
+| Depends on arch size; 32 bits in CS241
