@@ -70,6 +70,7 @@ Which brings us to *two's complement.*
 |===
 
 Benefits:
+
 - Only one zero
 - Left bit gives sign
 - Addition is clean --- just arithmetic mod stem:[2^n].
