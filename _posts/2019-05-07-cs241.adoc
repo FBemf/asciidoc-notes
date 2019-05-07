@@ -29,3 +29,19 @@ Our hardware is a simulated MIPS machine.
 |Depends on arch size; 32 bits in CS241
 
 |===
+
+
+=== Number Systems
+
+In decimal, base 10 works like this: stem:[12345 = 1*10^4 + 2*10^3 + 3*10^2 + 4*10^1 + 5*10^0].
+
+In binary, it's the same. stem:[10101 = 1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 1*2^0].
+
+To covert a decimal number to binary, you find the largest power of two smaller than it, set that
+digit of your new binary number to 1, subtract it from the original number, and repeat until you
+reach zero.
+
+How do we encode negative numbers in binary?
+
+"Pick a bit, if it's 1, it's negative, if it's 0, it's positive." That's the intuitive solution,
+*sign-magnitude* binary.
