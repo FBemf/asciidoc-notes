@@ -68,3 +68,10 @@ Which brings us to *two's complement.*
 |111 |-1
 
 |===
+
+Benefits:
+- Only one zero
+- Left bit gives sign
+- Addition is clean --- just arithmetic mod stem:[2^n].
+
+To convert a positive number to a negative number in two's complement, flip every bit and add one.
