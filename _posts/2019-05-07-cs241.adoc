@@ -14,14 +14,16 @@ Our hardware is a simulated MIPS machine.
 [options="header"]
 |===
 
-| Bit
-| 1 or 0
+|Bit
+|1 or 0
 
-| Nibble
-| 4 bits
+|Nibble
+|4 bits
 
-| Byte
-| 8 bits
+|Byte
+|8 bits
 
-| Word
-| Depends on arch size; 32 bits in CS241
+|Word
+|Depends on arch size; 32 bits in CS241
+
+|===
