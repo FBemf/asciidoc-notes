@@ -1,7 +1,7 @@
 = CS 241: Sequential Programs
 :showtitle:
 :page-navtitle: CS 241: Sequential Programs
-:page-root: ../../../
+:page-root: /../
 :toc:
 :stem:
 

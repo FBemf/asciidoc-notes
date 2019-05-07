@@ -1,7 +1,7 @@
 = CS 251: Computer Architecture
 :showtitle:
 :page-navtitle: CS 251: Computer Archiecture
-:page-root: ../../../
+:page-root: /../
 :toc:
 :stem:
 
