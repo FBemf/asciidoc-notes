@@ -8,7 +8,7 @@
 == May 6th: Intro
 
 The two subjects this course covers are Enumeration and Graph Theory.
-We're gonna do 5 weeks of Enumeration and 7 weeks of Graph Theory.
+We're gonna do 5 weeks of Enumeration, and 7 weeks of Graph Theory.
 
 The typical Enumeration question is "How many elements of a set stem:[S] of
 'combinatorical objects' have a given property?" We'll usually answer them by
