@@ -40,9 +40,20 @@ Basically:
 
 |===
 
+Much easier to just represent this as stem:[F = X bar Y Z + X Y bar Z + X Y Z ]
+--- the equation defining the truthiness of F.
+
 You can also see X instead of 1 or 0 in a truth table.
 This means that the value of that column doesn't affect
 the outcome either way.
 
-Much easier to just represent this as stem:[F = X bar Y Z + X Y bar Z + X Y Z ]
---- the equation defining the truthiness of F.
+Using X, we can express a table much more concisely. For instance,
+
+[options:"header"]
+|===
+|X |Y |Z |F
+
+|X |X |1 |1
+|===
+
+is much more concise than it would otherwise be.
