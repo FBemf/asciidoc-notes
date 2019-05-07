@@ -76,3 +76,6 @@ Benefits:
 - Addition is clean --- just arithmetic mod stem:[2^n].
 
 To convert a positive number to a negative number in two's complement, flip every bit and add one.
+
+To convert a negative to a positive, you can reverse the process... Or just do it again. It's
+equivalent either way, which is cool.
