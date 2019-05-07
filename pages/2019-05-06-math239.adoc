@@ -1,0 +1,71 @@
+= MATH 239: Combinatorics
+:showtitle:
+:page-navtitle: MATH 239: Combinatorics
+:page-root: ../../../
+:toc:
+:stem:
+
+== May 6th: Intro
+
+The two subjects this course covers are Enumeration and Graph Theory.
+We're gonna do 5 weeks of Enumeration, and 7 weeks of Graph Theory.
+
+The typical Enumeration question is "How many elements of a set stem:[S] of
+'combinatorical objects' have a given property?" We'll usually answer them by
+encoding the properties of stem:[S] into an algebraic expression called the
+*generating series* for stem:[S].
+
+For example: How many ways can we choose a dozen donts if the available
+flavours are chocolate, maple, lemon, and plain (and at least 12 are in
+stock)?
+
+Answer is the coefficient of stem:[x^12] in stem:[1/((1-x)^4)]
+
+Same question but only 3 chocolate and 5 maple left.
+
+Answer is the coefficient of stem:[x^12] in stem:[((1-x^4)(1-x^6))/((1-x)^4)].
+
+Standard framework for enumeratiton problems: We define a set stem:[S] and a weight
+function stem:[omega] that assigns each element stem:[sigma] of stem:[S] a nonnegative integer
+stem:[omega(sigma)].
+
+In Q1, stem:[S] is the setn of all collections of donutes from the 4 flavours, and
+the weight functin is stem:[w(sigma) = "the number of donuts in " sigma]. Then we
+ask, "how many elements of stem:[S] have a weight of 12?
+
+Usually our set stem:[S] is a *Cartesian product* of a *disjoint union* of Cartesian
+products. Recall that for sets stem:[A] and stem:[B], the Cartesian product stem:[AxxB]
+is the set stem:[AxxB = {(a, b): a in A, b in B}].
+
+The *union* stem:[AuuB] is stem:[AuuB = {x: x in A " or " x in B}], and the *intersection*
+stem:[AnnB] is stem:[AnnB = {x: x in A " and " x in B}]. The set stem:[AuuB] is a
+*disjoint union* if stem:[AnnB = O/] when stem:[A] and stem:[B] are finite sets, the *size* of stem:[AxxB, AuuB, " etc"] (denoted by stem:[|AuuB|, |AxxB|, " etc"]) is given by
+stem:[|AxxB| = |A| |B|] and stem:[|AuuB = |A| + |B| - |AnnB|].
+
+So if stem:[AuB] is a *disjoint* union we set stem:[|AuuB| = |A| + |B|].
+
+The kth *Cartesian power* of a set stem:[A] is the set of all ordered k-tubples of elements
+of stem:[A].
+
+[stem]
+++++
+A^k = {(a_1, a_2, ..., a_k): a_i in A " for each " i}
+++++
+
+If stem:[A] is a finite set then stem:[|A^k| = |A|^k].
+
+Suppose the donut shop has 3 chocolate, 5 maple, 19 lemon, and 17 plain donuts.
+Describe all possible collections of donutes (of any size) as a Cartesian product.
+
+[stem]
+++++
+{0,1,2,3} xx {0,1,2,3,4,5} xx {0,1,2, ... ,19} xx {0,1,2, ... ,17}
+++++
+
+Ok, fix a positive integer stem:[m]. Let stem:[S] be the subset of all subsets of
+stem:[{1, 2, ..., m}].
+Let the weight function stem:[omega] be defined on stem:[S] by stem:[omega(sigma)=|omega|].
+
+How many elements of stem:[S] have weight stem:[k]? (for any stem:[k])
+
+Answer is stem:[((m), (k))]. I think. Almost missed this bit.

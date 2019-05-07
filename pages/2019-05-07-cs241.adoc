@@ -1,0 +1,81 @@
+= CS 241: Sequential Programs
+:showtitle:
+:page-navtitle: CS 241: Sequential Programs
+:page-root: ../../../
+:toc:
+:stem:
+
+== May 7th: Intro
+
+This course is about making compilers.
+We start off bare hardware and build up to a C-like language.
+Our hardware is a simulated MIPS machine.
+
+[options="header"]
+|===
+
+|Type |Meaning
+
+|Bit
+|1 or 0
+
+|Nibble
+|4 bits
+
+|Byte
+|8 bits
+
+|Word
+|Depends on arch size; 32 bits in CS241
+
+|===
+
+
+=== Number Systems
+
+In decimal, base 10 works like this: stem:[12345 = 1*10^4 + 2*10^3 + 3*10^2 + 4*10^1 + 5*10^0].
+
+In binary, it's the same. stem:[10101 = 1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 1*2^0].
+
+To covert a decimal number to binary, you find the largest power of two smaller than it, set that
+digit of your new binary number to 1, subtract it from the original number, and repeat until you
+reach zero.
+
+How do we encode negative numbers in binary?
+
+"Pick a bit, if it's 1, it's negative, if it's 0, it's positive." That's the intuitive solution,
+*sign-magnitude* binary. It's conceptually easy, but it makes a lot of arithmetic a pain in the
+ass. It also gives you stem:[+0] and stem:[-0], which is just wasteful.
+
+Which brings us to *two's complement.*
+
+. Interpret the n-bit number as an unsigned int.
+. If the first bit is 0, then it's a regular positive binary number.
+. Otherwise, subtract stem:[2^n].
+
+[options="header"]
+|===
+
+|number |value 
+
+|000 |0
+|001 |1
+|010 |2
+|011 |3
+|100 |-4
+|101 |-3
+|110 |-2
+|111 |-1
+
+|===
+
+Benefits:
+
+- Only one zero
+- Left bit gives sign
+- Addition is clean --- just arithmetic mod stem:[2^n].
+
+To convert a positive number to a negative number in two's complement, flip every bit and add one.
+
+To convert a negative to a positive, you can reverse the process... Or just do it again. It's
+equivalent either way, which is cool.

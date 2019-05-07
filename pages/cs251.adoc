@@ -1,0 +1,17 @@
+= CS 251: Computer Architecture
+:showtitle:
+:page-navtitle: MATH 239: Combinatorics
+:page-root: .
+:toc:
+:stem:
+
+== May 7th: Intro
+
+Introduction to the idea of truth tables.
+
+But those are a pain! So we use boolean algebra instead.
+Similar to predicate logic, but stem:[xx] instead of stem:[^^]
+and stem:[*] instead of stem:[vv].
+stem:[not] stays the same. That's about it.
+
+We also use stem:[bar A] for the negation of stem:[A].
