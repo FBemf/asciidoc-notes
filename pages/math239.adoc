@@ -110,12 +110,13 @@ stem:[f: S -> T] that is:
 
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
 
+[TIP]
 .Example
-****
+====
 There is a bijection stem:[f] from stem:[S =] the set of all subsets of stem:[{1, ..., m}]
 to stem:[T = {0, 1}^m] (where exponentiation means repeated Cartesian product). Proof
 is not complex.
-****
+====
 
 .Lemma
 ****
@@ -130,3 +131,22 @@ Check f is onto: Let stem:[t in T]. Let stem:[s = g(t)]. Then
 stem:[f(s) = f(g(t))] = t]. Hence stem:[f] is onto.
 
 Therefore stem:[f] is a bijection. stem:[square].
+
+The converse (that stem:[f] being a bijection makes it have an inverse]
+also holds.
+****
+
+.Corollary
+****
+[stem]
+++++
+sum _k=0 ^m ((m), (k)) = 2^m
+++++
+
+We are writing the size of the set of all subsets of stem:[{1, ..., m}] in
+two ways.
+
+This is a *combinatorial proof*, where we count the members of a set in two
+different ways and get two different expressions of its size, which must then
+be equal
+****
