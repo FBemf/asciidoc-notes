@@ -69,3 +69,38 @@ Let the weight function stem:[omega] be defined on stem:[S] by stem:[omega(sigma
 How many elements of stem:[S] have weight stem:[k]? (for any stem:[k])
 
 Answer is stem:[((m), (k))]. I think. Almost missed this bit.
+
+
+== May 8th
+
+=== n choose k
+
+The number stem:[B(m, k)] of k-subsets of stem:[{1, 2, ..., m}]
+is stem:[(m(m-1)...(m-k+1))/(k!)].
+
+Proof: Let stem:[L] be the set of all ordered k-tuples of distinct elements of
+stem:[{1, 2, ..., m}]. Then stem:[|L| = m(m-1)(m-2)...(m-k+1)].
+
+We could also count stem:[|L|] by listing all stem:[B(m, k)] k-subsets of
+stem:[{1, 2, ..., m}] and ordering each in all stem:[k!] possible ways.
+
+So stem:[|L| = B(m, k)k!].
+We use the notation stem:[((m), (k)) i= (m(m-1)...(m-k+1))/(k!)]
+
+TODO fix this list
+NOTE: This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
+(or even all stem:[m in CC]). When stem:[m >= k] is an integer:
++ - stem:[((m), (k)) = (m!)/((m-k)!k!)]
+- stem:[((m), (k)) = ((m), (m-k))]
+- stem:[((m), (k)) = 0]
+- stem:[0!] is the *empty product*, which is 1. So stem:[((m), (0)) = 1]
+
+=== Bijections
+
+A *bijection* (or 1-to-1 correspondence) from a set stem:[S] to a set stem:[T] is a functon
+stem:[f: S -> T] that is:
+
+- 1-1, which means stem:[f(s_1) = f(s_2) -> s_1 = s_2]
+- onto,  which means stem:[AA t in T EE s in S f(s) = t]
+
+If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
