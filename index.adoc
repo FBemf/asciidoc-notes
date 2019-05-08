@@ -2,7 +2,6 @@
 :showtitle:
 :page-title: Jekyll Asciidoc Notes
 :page-root: ./
-:icons: font
 :page-description: A repository for notes, taken in Asciidoc
 
 Hey.

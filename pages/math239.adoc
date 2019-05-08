@@ -2,7 +2,6 @@
 :showtitle:
 :page-navtitle: MATH 239: Combinatorics
 :page-root: ../
-:icons: font
 :toc:
 :stem:
 
