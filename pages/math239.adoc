@@ -88,7 +88,6 @@ So stem:[|L| = B(m, k)k!].
 We use the notation stem:[((m), (k)) i= (m(m-1)...(m-k+1))/(k!)]
 
 [NOTE]
-.Note
 ====
 This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
 (or even all stem:[m in CC]). When stem:[m >= k] is an integer:
@@ -110,7 +109,6 @@ stem:[f: S -> T] that is:
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
 
 [NOTE, caption="example"]
-.Example
 ====
 There is a bijection stem:[f] from stem:[S =] the set of all subsets of stem:[{1, ..., m}]
 to stem:[T = {0, 1}^m] (where exponentiation means repeated Cartesian product). Proof
