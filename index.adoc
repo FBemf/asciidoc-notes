@@ -22,6 +22,11 @@ I mean heck, with the power of Asciimath,
 prod _(i=x) ^(x^2) 3 phi x " and " V uu U sube oo
 ++++
 
+[NOTE]
+====
+This is a note.
+====
+
 [source, ruby]
 ----
 "And you even get syntax highlighting".split.each do | line |
