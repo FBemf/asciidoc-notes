@@ -2,6 +2,7 @@
 :showtitle:
 :page-navtitle: MATH 239: Combinatorics
 :page-root: ../
+:icons: font
 :toc:
 :stem:
 
@@ -88,6 +89,7 @@ So stem:[|L| = B(m, k)k!].
 We use the notation stem:[((m), (k)) i= (m(m-1)...(m-k+1))/(k!)]
 
 [NOTE]
+.Note
 ====
  This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
 (or even all stem:[m in CC]). When stem:[m >= k] is an integer:
@@ -103,15 +105,28 @@ We use the notation stem:[((m), (k)) i= (m(m-1)...(m-k+1))/(k!)]
 A *bijection* (or 1-to-1 correspondence) from a set stem:[S] to a set stem:[T] is a functon
 stem:[f: S -> T] that is:
 
-- 1-1, which means stem:[f(s_1) = f(s_2) -> s_1 = s_2]
-- onto,  which means stem:[AA t in T EE s in S f(s) = t]
+- 1-1, which means stem:[f(s_1) = f(s_2) -> s_1 = s_2] (injection)
+- onto,  which means stem:[AA t in T EE s in S f(s) = t] (surjection)
 
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
 
-[NOTE]
 .Example
-====
+****
 There is a bijection stem:[f] from stem:[S =] the set of all subsets of stem:[{1, ..., m}]
 to stem:[T = {0, 1}^m] (where exponentiation means repeated Cartesian product). Proof
 is not complex.
-====
+****
+
+.Lemma
+****
+If stem:[f: S -> T] has an inverse, then it's a bijection.
+
+Proof: Let stem:[g: T -> S] be the inverse of f.
+
+Check f is 1-1: if stem:[f(s_1) = f(s_2)], then
+stem:[g(f(s_1)) = g(f(s_2))], so stem:[s_1 = s_2]. Hence f is 1-1.
+
+Check f is onto: Let stem:[t in T]. Let stem:[s = g(t)]. Then
+stem:[f(s) = f(g(t))] = t]. Hence stem:[f] is onto.
+
+Therefore stem:[f] is a bijection. stem:[square].
