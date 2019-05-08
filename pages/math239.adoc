@@ -109,7 +109,7 @@ stem:[f: S -> T] that is:
 
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
 
-[TIP]
+[NOTE, caption="example"]
 .Example
 ====
 There is a bijection stem:[f] from stem:[S =] the set of all subsets of stem:[{1, ..., m}]
