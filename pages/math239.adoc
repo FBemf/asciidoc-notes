@@ -1,7 +1,7 @@
 = MATH 239: Combinatorics
 :showtitle:
 :page-navtitle: MATH 239: Combinatorics
-:page-root: /../
+:page-root: ../
 :toc:
 :stem:
 
