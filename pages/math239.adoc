@@ -43,7 +43,7 @@ stem:[AnnB] is stem:[AnnB = {x: x in A " and " x in B}]. The set stem:[AuuB] is 
 *disjoint union* if stem:[AnnB = O/] when stem:[A] and stem:[B] are finite sets, the *size* of stem:[AxxB, AuuB, " etc"] (denoted by stem:[|AuuB|, |AxxB|, " etc"]) is given by
 stem:[|AxxB| = |A| |B|] and stem:[|AuuB = |A| + |B| - |AnnB|].
 
-So if stem:[AuB] is a *disjoint* union we set stem:[|AuuB| = |A| + |B|].
+So if stem:[AuuB] is a *disjoint* union we set stem:[|AuuB| = |A| + |B|].
 
 The kth *Cartesian power* of a set stem:[A] is the set of all ordered k-tubples of elements
 of stem:[A].
@@ -91,7 +91,7 @@ We use the notation stem:[((m), (k)) i= (m(m-1)...(m-k+1))/(k!)]
 [NOTE]
 .Note
 ====
- This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
+This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
 (or even all stem:[m in CC]). When stem:[m >= k] is an integer:
 
 - stem:[((m), (k)) = (m!)/((m-k)!k!)]
