@@ -87,13 +87,16 @@ stem:[{1, 2, ..., m}] and ordering each in all stem:[k!] possible ways.
 So stem:[|L| = B(m, k)k!].
 We use the notation stem:[((m), (k)) i= (m(m-1)...(m-k+1))/(k!)]
 
-TODO fix this list
-NOTE: This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
+[NOTE]
+====
+ This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
 (or even all stem:[m in CC]). When stem:[m >= k] is an integer:
-+ - stem:[((m), (k)) = (m!)/((m-k)!k!)]
+
+- stem:[((m), (k)) = (m!)/((m-k)!k!)]
 - stem:[((m), (k)) = ((m), (m-k))]
 - stem:[((m), (k)) = 0]
 - stem:[0!] is the *empty product*, which is 1. So stem:[((m), (0)) = 1]
+====
 
 === Bijections
 
@@ -104,3 +107,11 @@ stem:[f: S -> T] that is:
 - onto,  which means stem:[AA t in T EE s in S f(s) = t]
 
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
+
+[NOTE]
+.Example
+====
+There is a bijection stem:[f] from stem:[S =] the set of all subsets of stem:[{1, ..., m}]
+to stem:[T = {0, 1}^m] (where exponentiation means repeated Cartesian product). Proof
+is not complex.
+====
