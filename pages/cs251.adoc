@@ -59,3 +59,42 @@ Using X, we can express a table much more concisely. For instance,
 |===
 
 is much more concise than it would otherwise be.
+
+
+== May 9th
+
+The most concise way to talk about hardware components is as a truth
+equation in minimal terms.
+
+To get this, you take just the true cases and add them togeter,
+a la stem:[bar X Y + XY = F]. Sometimes you can further reduce it
+by hand, using boolean algebra rules, as in stem:[bar X Y + XY = Y = F].
+
+Symbols for logic gates:
+
+* AND is a D shape
+* OR is a rounded chevron shape, like a triangle with the back pushed in.
+* NOT is a triangle with a bubble at the tip)
+* NAND and NOR are AND and OR but with tip bubbles respectively
+
+
+=== Transistors
+
+A transistor is like a switch. It has two inputs and an output; whether or not
+the first input is powered determines whether or not power can flow hrought he second
+and third inputs.
+
+THere are two types: NMOS and PMOS.
+
+[options="header"]
+|===
+|Type |Resistence when control input is on |Resistence when control input is off
+|NMOS |Low |High
+|PMOS |High |Low
+
+PMOS is drawn like NMOS but with an extra circle on the line.
+
+TIP: A **N**egative correlation has y high when x is low and x high when y is low,
+like an **N**MOS transistor. A **P**ositive correlation is the other way around,
+like a **P**MOS transistor. And since positive means _more_, a PMOS transistor
+has an _extra_ circle on it.
