@@ -87,6 +87,11 @@ equivalent either way, which is cool.
 
 == May 9th
 
+Computers store instructions in memory alongside regular data.
+This is called von Neumann architecture, after John von Neumann.
+
+Machine language is processor-specific.
+
 === Registers
 
 ML uses binary instructions.
@@ -190,6 +195,8 @@ end loop
 
 === Ending a program
 
-Register $31 is the address of the loader's next instruction, where it'll
-start loading the next program. To move the PC to the place pointed to by
-register 31, use the Jump Register instruction `jr $31`.
+When a program's finished, the loader loads the next program starting from register 31.
+
+$31 is special because it is the address of the loader's next instruction,
+where it'll start loading the next program.
+To move the PC to the place pointed to by register 31, use the Jump Register instruction `jr $31`.
