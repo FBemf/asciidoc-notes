@@ -7,6 +7,8 @@
 
 == May 7th: Intro
 
+Lecture slides are available https://cs.uwaterloo.ca/~mdtpetri/cs241/[here.]
+
 === Bits and Bytes
 
 This course is about making compilers.
@@ -125,6 +127,7 @@ This way, our example instruction from above becomes
 `0x00e8d820`. Ain't it nice?
 ****
 
+
 === RAM
 
 RAM is basically just a big array, which is far away from the CPU.
@@ -148,6 +151,7 @@ How loading works:
 
 Storing is that but in reverse
 
+
 === Executing Code
 
 How does the CPU know which instruction to execute next?
@@ -168,6 +172,7 @@ CS241 uses mips.twoints, and mips.array taht load programs into memory address 0
 
 We will talk about other addresses later.
 
+
 === Fetch-Execute Cycle
 
 The only program your comuter really runs is
@@ -181,3 +186,10 @@ loop
     Decode and execute instruction in IR
 end loop
 ====
+
+
+=== Ending a program
+
+Register $31 is the address of the loader's next instruction, where it'll
+start loading the next program. To move the PC to the place pointed to by
+register 31, use the Jump Register instruction `jr $31`.
