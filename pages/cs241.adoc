@@ -152,7 +152,9 @@ Storing is that but in reverse
 
 How does the CPU know which instruction to execute next?
 A special register called the Program Counter (PC) stores the memory address of the
-next instruction to execute.
+next instruction to execute.[master c86be72] Changes
+ 1 file changed, 86 insertions(+)
+
 The Instruction Register (IR) holds the current instruction.
 
 But a program needs a starting point. By convention, we guarantee that a specific address (like 0)
@@ -162,6 +164,20 @@ contains code.
 A program called a *loader* puts a program into memory and sets the PC to the address of the first
 instruction.
 
-CS241 uses mips, twoints, and mips.array taht load programs into memory address 0.
+CS241 uses mips.twoints, and mips.array taht load programs into memory address 0.
 
 We will talk about other addresses later.
+
+=== Fetch-Execute Cycle
+
+The only program your comuter really runs is
+
+[source]
+====
+PC <- 0
+loop
+    IR <- MEM[PC]
+    PC <- PC + 4
+    Decode and execute instruction in IR
+end loop
+====
