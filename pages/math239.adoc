@@ -147,3 +147,58 @@ This is a *combinatorial proof*, where we count the members of a set in two
 different ways and get two different expressions of its size, which must then
 be equal
 ****
+
+
+== May 10th
+
+=== Binomial Theorem:
+
+[stem]
+++++
+AA m in ZZ_(>=0) AA x (1+x)^m = sum _k(k=0) ^m (((m), (k)) x^k
+
+"Proof: " (1+x)^m = (1+x)(1+x)...(1+x) = (x^0 + x^1) (x^0 + x^1) ... (x^0 + x^1)
+
+= x^(0+0+0+...) + x^(1+0+0+...) + ... " ("2^n" terms"
+++++
+
+Our bijection from last class, which mapped the subsets of a set with size m to
+stem:[{0, 1}^m]] applies here, since the exponent terms fit that pattern.
+
+The number of terms in which the exponent adds up to exactly k is the number
+of elements of T with exactly k 1s. By our bijection, we know that the number
+of k-subsets of stem:[{1, ..., m}]. It's stem:[((m), (k))]. Thus:
+
+[stem]
+++++
+(1+x)^m = sum _(k=0) ^m ((m), (k)) x^k
+++++
+
+.Corollary
+****
+[stem]
+++++
+sum _(k=0) ^m ((m), (k)) = (1+1)^m = 2^m
+++++
+
+This is a great demonstration of the idea of a combinatorical proof.
+The idea is to express numbers in terms of the size of a set, which
+we describe in two different ways.
+
+Often binomial coefficients are involved.
+
+For instance: give a combinatorial prove that stem:[((n), (k)) = ((n-1), (k)) + ((n-1), (k-1))].
+
+Proof: we take stem:[((n),(k)) as the size of S,
+which is the set of all k-subsets of stem:[{1, 2, ..., n}].
+
+We can write stem:[S = S_0uuS_1], where stem:[S_0nnS_1 = O/] where stem:[S_0 =] the
+set of all k-subsets of {1, 2, ..., n} that do NOT contain the last element n.
+stem:[S_1 = ] those that do.
+
+Then stem:[S_0] is the set of k-subsets of stem:[{1, 2, ..., n-1}]. Therefore
+stem:[|S_0| = ((n-1), (k)).
+
+Then there is a bijection from stem:[S_1] to the set of all (k-1)-subsets of
+stem:[{1, 2, ..., n-1}] obtained by removing the element n. Thus,
+stem:[|S_1| = ((n-1),(k-1))].

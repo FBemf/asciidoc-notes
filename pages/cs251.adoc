@@ -92,7 +92,7 @@ THere are two types: NMOS and PMOS.
 |NMOS |Low |High
 |PMOS |High |Low
 
-PMOS is drawn like NMOS but with an extra circle on the line.
+PMOS is drawn like NMOS but with a circle on the control input.
 
 TIP: A **N**egative correlation has y high when x is low and x high when y is low,
 like an **N**MOS transistor. A **P**ositive correlation is the other way around,
