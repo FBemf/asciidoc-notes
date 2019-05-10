@@ -180,6 +180,7 @@ of k-subsets of stem:[{1, ..., m}]. It's stem:[((m), (k))]. Thus:
 ++++
 sum _(k=0) ^m ((m), (k)) = (1+1)^m = 2^m
 ++++
+****
 
 This is a great demonstration of the idea of a combinatorical proof.
 The idea is to express numbers in terms of the size of a set, which
@@ -189,7 +190,7 @@ Often binomial coefficients are involved.
 
 For instance: give a combinatorial prove that stem:[((n), (k)) = ((n-1), (k)) + ((n-1), (k-1))].
 
-Proof: we take stem:[((n),(k)) as the size of S,
+Proof: we take stem:[((n),(k))] as the size of S,
 which is the set of all k-subsets of stem:[{1, 2, ..., n}].
 
 We can write stem:[S = S_0uuS_1], where stem:[S_0nnS_1 = O/] where stem:[S_0 =] the
@@ -197,8 +198,42 @@ set of all k-subsets of {1, 2, ..., n} that do NOT contain the last element n.
 stem:[S_1 = ] those that do.
 
 Then stem:[S_0] is the set of k-subsets of stem:[{1, 2, ..., n-1}]. Therefore
-stem:[|S_0| = ((n-1), (k)).
+stem:[|S_0| = ((n-1), (k))].
 
 Then there is a bijection from stem:[S_1] to the set of all (k-1)-subsets of
 stem:[{1, 2, ..., n-1}] obtained by removing the element n. Thus,
-stem:[|S_1| = ((n-1),(k-1))].
+stem:[|S_1| = ((n-1),(k-1))]. Hence:
+
+[stem]
+++++
+((n),(k)) = |S| = |S_0| + |S_1| = ((n-1),(k)) + ((n-1),(k-1))
+++++
+
+Theorem: For stem:[n, k in ZZ_(>=0)], we have
+stem:[((n+k),(n)) = sum _(i-0) ^k ((n+i-1),(n-1))].
+
+Proof: Let stem:[S] be the set of of all n-subsets of stem:[{1, 2, ..., n+k}].
+Then stem:[|S| = ((n+k),(n))].
+
+Let stem:[S_i] be the set of all n-subsets of stem:[{1, ..., n+k}] whose largest
+element is stem:[n+i]. Do this for stem:[0<=i<=k]. Then stem:[S=S_0uuS_1uu...uuS_k] is
+a disjoint union. For each i, each element of stem:[S_i] is of the form
+stem:[sigma =Auu{n+1}], where A is an (n-1)-subset of stem:[{1, 2, ..., n+i-1}],
+since stem:[n+i] is the largest element in stem:[sigma].
+
+Conversely, every (n-1)-subset A of stem:[{1, 2, ..., n+1-1}] together with stem:[n_1]
+gives an element of stem:[S_i]. So we get a bijection from stem:[S_i] toi the set of
+(n-1)-subsets of stem:[{1, 2, ..., n+i-1}] obtained by removing stem:[n+i].
+
+Hence stem:[|S_i| = ((n+i-1),(n-1))]. Thus,
+
+[stem]
+++++
+((n_k),(n)) = |S| = sum _(i=0) ^k |S_i| = sum _(i=0) ^k ((n+i-1),(n-1))
+
+square
+++++
+
+For a set S, a *weight function* on S is a function stem:[w: S -> ZZ_(>=0)] such that
+for each stem:[n in ZZ_(>=0)], the number of elements stem:[sigma in S] with
+stem:[w(sigma) = n] is finite.
