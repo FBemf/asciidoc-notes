@@ -237,3 +237,142 @@ square
 For a set S, a *weight function* on S is a function stem:[w: S -> ZZ_(>=0)] such that
 for each stem:[n in ZZ_(>=0)], the number of elements stem:[sigma in S] with
 stem:[w(sigma) = n] is finite.
+
+
+== May 13th
+
+=== Weight functions and indeterminates
+
+A *weight function* on a set stem:[S] is a function stem:[w: S -> ZZ_(>=0)] such that,
+for every stem:[n >= 0], stem:[{sigma in S: w(sigma)=n}] is finite.
+
+Let stem:[S] be a set and let stem:[w] be a weight function on stem:[S]. The *generating
+series* for stem:[S] with respect to stem:[w], in the indeterminate stem:[x], is
+
+[stem]
+++++
+Psi_s(x) = sum _(sigma in S) x^(w(sigma)).
+++++
+
+We can collect the like terms and write
+
+[stem]
+++++
+Psi_s(x) = sum _(k>=0} a_k x^k
+++++
+
+where stem:[a_k] is the number of elements of stem:[S] of weight stem:[k].
+
+[NOTE, caption="Example"]
+====
+Let stem:[S =] the set of all subsets of stem:[{1, 2, ..., m}].
+Let stem:[w(sigma) = |sigma|]. Then
+
+[stem]
+++++
+Psi_s(x) = sum _(k>=0) ((m),(k)) x^k = sum _(k = 0) ^m ((m),(k)) x^k = (1+x)^m
+++++
+====
+
+[NOTE, caption="Example"]
+====
+[stem]
+++++
+S = ZZ_(>=0)
+
+w(sigma) = sigma
+
+Psi_s(x) = sum_(i>=0) x^i
+++++
+====
+
+stem:[x] is an *indeterminate*. Don't think of it as something that you substitute
+for a number; doing that with a generating series just gets you noise (unless stem:[S]
+is finite).
+
+An indeterminate is a symbol that satisfies stem:[x^0 = 1, x^a+x^b = x^(a+b),
+(x^a)^b=x^(ab)].
+
+If stem:[S] is infinite, stem:[Psi_s(x)] is an infinite sum. This will be a *formal power series*
+(more on that later).
+
+.Theorem
+****
+Let stem:[S] be a finite set with weight funtion stem:[w] (so stem:[Psi_s(x)] is a polynomial).
+Then
+
+. stem:[Psi_s'(1) = |S|]
+. stem:[Psi_s'(1)] is the total weight of all elements in stem:[S].
+
+Proof:
+
+[stem]
+++++
+Psi_x(s) = sum _(sigma in S) x^(w(sigma))
+
+Psi_s(1) = sum _(sigma in S) 1^(w(sigma)) = |S|
+
+Psi_s'(x) = sum _(sigma in S) w(sigma) x^(w(sigma)-1)
+
+Psi_s'(x) = sum _(sigma in S) w(sigma)
+++++
+****
+
+[NOTE, caption="Example"]
+====
+stem:[S] is the set consisting of 5 nickels, 12 dimes and 3 quarters. Let stem:[w(sigma)=] the 
+value of stem:[sigma], in cents.
+
+[stem]
+++++
+Psi_s(x) = 5x^5 + 12x^10 + 3x^25
+
+Psi_s'(x) = 25x^4 + 120x^9 + 75x^24
+
+Psi_s(1) = 5 + 12 + 3 = 20
+
+Psi_s'(1) = 25 + 120 + 75 = 220
+++++
+====
+
+=== Formal power series
+
+.Definiton
+****
+A *formal power series* over the rational numbers in the indeterminate stem:[x] is a formal
+expression of the following type:
+
+[stem]
+++++
+A(x) = sum _(i>=0) a_i x^i, a_i in QQ
+++++
+
+You can do several kinds of arithmetic with them.
+
+* Addition: for stem:[A(x) = sum _(i>=0) a_i x^i]l and
+stem:[B(x) = sum _(i>=0) b_i x^i] we define
++
+[stem]
+++++
+A(x)+B(x) = sum _(i>=0)(a_i+b_i)x^i
+++++
++
+Subtraction follows trivially.
+
+* Multiplication generalizes polynomial multiplication:
++
+[stem]
+++++
+A(x)B(x) = sum_(i>=0) (sum _(j=0) ^i a_j b_(i-j))x^i
+++++
++
+Note that stem:[A(x)B(x) = B(x)A(x)].
+
+* Equality: stem:[A(x) = B(x)] if and only if stem:[a_i=b_i] across all stem:[i>=0].
+
+* Coefficients: stem:[a_i] is called the *coefficient* of stem:[x^i] in stem:[A(x)].
+We write stem:[a_i=\[x^i\]A(x)].
+
+* Inverse: We say that stem:[B(x)] is the multiplicative inverse of stem:[A(x)] if
+stem:[A(x)B(x) = 1 = 1+0x+0x^2+...].
+****
