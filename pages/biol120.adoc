@@ -1,0 +1,17 @@
+= BIOL 120: Plants
+:showtitle:
+:page-navtitle: BIOL 120: Plants
+:page-root: ../
+:toc:
+:stem:
+
+These notes are mostly to fill in the stuff that's not covered
+in the lecture slides.
+
+== Lecture 2: Plant Cells
+
+You can detect microtubule-related activity by adding a drug that
+inhibits microtubule assembly and seeing if the thing still happens.
+
+You can similarly use actin-inhibiting drubs to detect actin fillament
+activity.

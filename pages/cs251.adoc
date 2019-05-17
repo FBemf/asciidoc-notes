@@ -98,3 +98,26 @@ TIP: A **N**egative correlation has y high when x is low and x high when y is lo
 like an **N**MOS transistor. A **P**ositive correlation is the other way around,
 like a **P**MOS transistor. And since positive means _more_, a PMOS transistor
 has an _extra_ circle on it.
+
+== May 14th
+
+=== XOR
+
+The XOR gate is like an OR gate, but with a line on the input end, parallel to that
+side of the triangle. XNOR is the same with the NOR gate.
+
+=== Decoders and Multiplexers
+
+A *decoder* takes a binary number (encoded in electric signals) and turns on one corresponding
+output for each possible number. A decoder with stem:[n] inputs outputs stem:[2^n] outputs,
+only one of which is ever on at a time.
+
+A *multiplexer* (mux) with stem:[n] primary inputs has stem:[ceil(log_2 n)] secondary inputs.
+The binary pattern in the secondary inputs determines which of the primary inputs is passed
+through into the single output.
+
+Both of these can be used to create simpler implementations of complex gates.
+The outputs of a decoder for which the gate is on can simply be ORed together;
+and in a gate where, for instance, input stem:[X] determines the output when input
+stem:[Y] is on, and input stem:[Z] determines the output when input stem:[Y] is off,
+a mux can use stem:[Y] to toggle between passing stem:[X] or stem:[Y] through.
