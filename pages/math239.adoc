@@ -251,14 +251,14 @@ series* for stem:[S] with respect to stem:[w], in the indeterminate stem:[x], is
 
 [stem]
 ++++
-Psi_s(x) = sum _(sigma in S) x^(w(sigma)).
+Phi_s(x) = sum _(sigma in S) x^(w(sigma)).
 ++++
 
 We can collect the like terms and write
 
 [stem]
 ++++
-Psi_s(x) = sum _(k>=0} a_k x^k
+Phi_s(x) = sum _(k>=0} a_k x^k
 ++++
 
 where stem:[a_k] is the number of elements of stem:[S] of weight stem:[k].
@@ -270,7 +270,7 @@ Let stem:[w(sigma) = |sigma|]. Then
 
 [stem]
 ++++
-Psi_s(x) = sum _(k>=0) ((m),(k)) x^k = sum _(k = 0) ^m ((m),(k)) x^k = (1+x)^m
+Phi_s(x) = sum _(k>=0) ((m),(k)) x^k = sum _(k = 0) ^m ((m),(k)) x^k = (1+x)^m
 ++++
 ====
 
@@ -282,7 +282,7 @@ S = ZZ_(>=0)
 
 w(sigma) = sigma
 
-Psi_s(x) = sum_(i>=0) x^i
+Phi_s(x) = sum_(i>=0) x^i
 ++++
 ====
 
@@ -293,28 +293,28 @@ is finite).
 An indeterminate is a symbol that satisfies stem:[x^0 = 1, x^a+x^b = x^(a+b),
 (x^a)^b=x^(ab)].
 
-If stem:[S] is infinite, stem:[Psi_s(x)] is an infinite sum. This will be a *formal power series*
+If stem:[S] is infinite, stem:[Phi_s(x)] is an infinite sum. This will be a *formal power series*
 (more on that later).
 
 .Theorem
 ****
-Let stem:[S] be a finite set with weight funtion stem:[w] (so stem:[Psi_s(x)] is a polynomial).
+Let stem:[S] be a finite set with weight funtion stem:[w] (so stem:[Phi_s(x)] is a polynomial).
 Then
 
-. stem:[Psi_s'(1) = |S|]
-. stem:[Psi_s'(1)] is the total weight of all elements in stem:[S].
+. stem:[Phi_s'(1) = |S|]
+. stem:[Phi_s'(1)] is the total weight of all elements in stem:[S].
 
 Proof:
 
 [stem]
 ++++
-Psi_x(s) = sum _(sigma in S) x^(w(sigma))
+Phi_x(s) = sum _(sigma in S) x^(w(sigma))
 
-Psi_s(1) = sum _(sigma in S) 1^(w(sigma)) = |S|
+Phi_s(1) = sum _(sigma in S) 1^(w(sigma)) = |S|
 
-Psi_s'(x) = sum _(sigma in S) w(sigma) x^(w(sigma)-1)
+Phi_s'(x) = sum _(sigma in S) w(sigma) x^(w(sigma)-1)
 
-Psi_s'(x) = sum _(sigma in S) w(sigma)
+Phi_s'(x) = sum _(sigma in S) w(sigma)
 ++++
 ****
 
@@ -325,13 +325,13 @@ value of stem:[sigma], in cents.
 
 [stem]
 ++++
-Psi_s(x) = 5x^5 + 12x^10 + 3x^25
+Phi_s(x) = 5x^5 + 12x^10 + 3x^25
 
-Psi_s'(x) = 25x^4 + 120x^9 + 75x^24
+Phi_s'(x) = 25x^4 + 120x^9 + 75x^24
 
-Psi_s(1) = 5 + 12 + 3 = 20
+Phi_s(1) = 5 + 12 + 3 = 20
 
-Psi_s'(1) = 25 + 120 + 75 = 220
+Phi_s'(1) = 25 + 120 + 75 = 220
 ++++
 ====
 
@@ -441,10 +441,6 @@ Show that if stem:[A(x) has an inverse, then it's unique.
 
 .Theorem
 ****
-Let 
-
-.Theorem
-****
 Let stem:[m] be a positive integer. Then stem:[(1-x)^m = sum _(k>=0) ((m+k-1),(m-1)) x^k].
 ****
 
@@ -487,7 +483,7 @@ Proof: stem:[(1-x)(1+x+x^2+...+x^k) = 1+x-x+x^2-x^2+...- x^k+1 = 1-x^(k+1)]
 
 So remember: when finding coefficients for fps, here's your toolbox:
 
-* stem:[(1-x)^-m = sum _(k>=0) ((m+k-1),(m-1))x^k
-* stem:[((1-x)^-1 = sum _(k>=0) x^k] 
+* stem:[(1-x)^-m = sum _(k>=0) ((m+k-1),(m-1))x^k]
+* stem:[(1-x)^-1 = sum _(k>=0) x^k] 
 * Finite Geometric Series (above)
 * Binomial Theorem

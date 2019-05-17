@@ -1,0 +1,196 @@
+= CS 240e: Data Structures
+:showtitle:
+:page-navtitle: CS 240e: Data Structures
+:page-root: ../
+:toc:
+:stem:
+
+== May 7th
+
+=== Big O notation
+
+The definition of stem:[f(x) in O(g(x)] is:
+
+[stem]
+++++
+AA c > 0, EE m_0 > 0, AA m >= m_0 f(m) < cg(m)
+++++
+
+TODO: Add in definitions for little o, theta, and the omegas.
+
+== May 9th
+
+=== Examples of Order Notation
+
+Prove that stem:[f(n) = 2n^2 + 3n + 11 in Omega(n^2)].
+
+TODO: all this asciimath needs hard returns...
+
+[stem]
+++++
+EE c > 0, m_0 > 0 AA m >= m_0 cm^2 < 2m^2 + 3m + 11
+
+c = 2 and m = 1 " works " -> 2m^2 + 3m + 11 in Omega(m^2)
+
+EE c > 0, m_0 > 0 AA m >= m_0 cm^2 < 1/2 m^2 - 5m
+
+EE m_0 " s.t. " 5m < 1/4 m^2 AA m >= 100, 1/2 m^2 - 5m > 1/4 m^2
+
+m_0 = 100, c = 1/4
+++++
+
+Useful theorem that we can use in the assignment:
+
+[stem]
+++++
+if f(m) in o(g(m)) and lim_(m->oo) g(m) = +oo
+
+"then" lim_(m->oo) f(m) - g(m) = -oo
+
+"Proof: " AA c > 0, EE m_0 > 0, AA m >= m_0 |f(m)| < c |g(m)|
+
+|f(m)| - |g(m)| < (c-1) |g(m)|
+
+"positivity " f(m) - g(m) < (c-1)g(m)
+
+"Choose " c = 1/2
+
+f(m) - g(m) < -1/2 g(m)
+
+f(m) - g(m) < -1/2 g(m) AA m >= m_0 "then" lim_(m->oo) f(m) - g(m) = -oo
+++++
+
+=== Techniques for Order Notation
+
+Suppose that stem:[f(n) > 0] and stem:[g(n) > 0] for all stem:[n >= n_0].
+Suppose then that
+
+[stem]
+++++
+L = lim_(n->oo) f(n)/g(n) " (in particular, the limit exists)"
+
+"then"
+
+f(n) in o(g(n)) if l = 0
+
+f(n) in Theta(g(n)) if 0 < L < oo
+
+f(n) in omega(g(n)) if L = oo
+++++
+
+The required limit can often be found with l'Hopitale's rule.
+This gives sufficient, but not necessary, conditions for the stated conclusions
+(since the limit doesn't necessarily exist -- think sinusoidal funcs).
+
+We know stem:[f(m) in o(g(m)) -> lim _(m->oo) f(m)/g(m) = 0]
+We can use the contrapositive (stem:[(A -> B) -> (bar B -> bar A)]):
+
+[stem]
+++++
+if not EE lim _(m->oo) |f(m)/g(m)|
+
+"then" f(m) cancel in o(g(m))
+++++
+
+[TIP]
+.Exercise
+====
+[stem]
+++++
+f(m) = log(m)
+g(m) = sqrt(m)
+"Prove or disprove " f(m) in o(g(m)), f(m) in O(g(m)), f(m) in Omega(g(m))
+++++
+Little o is true by log rules.
+Big O is implied by little o.
+Big Omega is false because it's mutually exclusive with little o.
+Little omega is false because it implies big Omega.
+++++
+===
+
+We can also use the contrapositive:
+
+[stem]
+++++
+f(m) in Omega(g(m)) -> f(m) cancel in o(g(m))
+++++
+
+We can prove this because
+
+. If the limit stem:[lim _(m->oo) f(m)/g(m)] doesn't exist,
+  it can't be little o, because little o always has a limit.
+. If there is a limit L, 
++
+[stem]
+++++
+EE c > 0, m_0 > 0, AA m >= m_0 f(m) >= cg(m) -> L > c > 0 -> f(m) cancel in o(g(m))
+++++
+
+
+=== Starting Algortihm Analysis
+
+Break algorithm down into primitive operations and loops.
+
+Two options:
+
+- Use thetas throughout the calculation
+- Use separate big Os and big Omegas throughout
+
+Algorithms can have different running times on two instances of the same size.
+
+[source]
+====
+Test3(A, n)
+A: array of size n
+1.     for i <- 1 to n - 1 do
+2.         j <- 1
+3.         while j > 0 and A[j] > A[j-1] do
+4.             swap A[j] and A[j-1]
+5.             j <- j-1
+====
+
+The worst-case running time is the longest possible complexity in terms of the input.
+The average case is averaged across the complexity of all the possible inputs.
+
+TODO: make all tabs spaces in kakoune 
+
+It's important to note that we can't always compare algorithms based on big O.
+Keep in mind that worst-case and best-case instances can make a difference.
+
+Also, a big O can be as loose as you want. Most algorithms are stem:[O(n^n^n^n)].
+So theta can be more useful sometimes, if you want to stay tight.
+
+
+=== Analysis of Merge Sort
+
+[source]
+====
+MergeSort(A, l = 0, r = n-1, S = NIL)
+A: Array of size n, 0 <= l <= r <= n -1
+1.    if S is NIL, initialize it a s array S[0..n-1]
+2.    if (r  l) then
+3.        return
+4.    else
+5.        m = (r+l)/2
+6.        MergeSort(A, l, m, S)
+7.        MergeSort(A, m+1, r, S)
+8.        Merge(A, l, m, r, S)
+
+
+== May 16th
+
+=== Non-deterministic Algorithms
+
+Expected runtime:
+
+[stem]
+++++
+E("runtime on " I) = sum _(n in Omega) P(n)*"runtime of n"
+
+=: T^(exp)(I)
+
+"where " n in {0, 1}
+
+"we say " T^(exp)(m) = max _(|I|=m) T^(exp)(I)
+++++
+
