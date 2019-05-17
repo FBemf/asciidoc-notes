@@ -15,7 +15,7 @@ The typical Enumeration question is "How many elements of a set stem:[S] of
 encoding the properties of stem:[S] into an algebraic expression called the
 *generating series* for stem:[S].
 
-For example: How many ways can we choose a dozen donts if the available
+For example: How many ways can we choose a dozen donuts if the available
 flavours are chocolate, maple, lemon, and plain (and at least 12 are in
 stock)?
 
@@ -29,22 +29,22 @@ Standard framework for enumeratiton problems: We define a set stem:[S] and a wei
 function stem:[omega] that assigns each element stem:[sigma] of stem:[S] a nonnegative integer
 stem:[omega(sigma)].
 
-In Q1, stem:[S] is the setn of all collections of donutes from the 4 flavours, and
-the weight functin is stem:[w(sigma) = "the number of donuts in " sigma]. Then we
+In Q1, stem:[S] is the set of all collections of donuts from the 4 flavours, and
+the weight function is stem:[w(sigma) = "the number of donuts in " sigma]. Then we
 ask, "how many elements of stem:[S] have a weight of 12?
 
 Usually our set stem:[S] is a *Cartesian product* of a *disjoint union* of Cartesian
 products. Recall that for sets stem:[A] and stem:[B], the Cartesian product stem:[AxxB]
 is the set stem:[AxxB = {(a, b): a in A, b in B}].
 
-The *union* stem:[AuuB] is stem:[AuuB = {x: x in A " or " x in B}], and the *intersection*
-stem:[AnnB] is stem:[AnnB = {x: x in A " and " x in B}]. The set stem:[AuuB] is a
+The *union* stem:[AuuB] is stem:[AuuB = {x: x in A or x in B}], and the *intersection*
+stem:[AnnB] is stem:[AnnB = {x: x in A and x in B}]. The set stem:[AuuB] is a
 *disjoint union* if stem:[AnnB = O/] when stem:[A] and stem:[B] are finite sets, the *size* of stem:[AxxB, AuuB, " etc"] (denoted by stem:[|AuuB|, |AxxB|, " etc"]) is given by
-stem:[|AxxB| = |A| |B|] and stem:[|AuuB = |A| + |B| - |AnnB|].
+stem:[|AxxB| = |A| |B|] and stem:[|AuuB| = |A| + |B| - |AnnB|].
 
 So if stem:[AuuB] is a *disjoint* union we set stem:[|AuuB| = |A| + |B|].
 
-The kth *Cartesian power* of a set stem:[A] is the set of all ordered k-tubples of elements
+The kth *Cartesian power* of a set stem:[A] is the set of all ordered k-tuples of elements
 of stem:[A].
 
 [stem]
@@ -68,7 +68,7 @@ Let the weight function stem:[omega] be defined on stem:[S] by stem:[omega(sigma
 
 How many elements of stem:[S] have weight stem:[k]? (for any stem:[k])
 
-Answer is stem:[((m), (k))]. I think. Almost missed this bit.
+Answer is stem:[((m), (k))].
 
 
 == May 8th
@@ -85,7 +85,7 @@ We could also count stem:[|L|] by listing all stem:[B(m, k)] k-subsets of
 stem:[{1, 2, ..., m}] and ordering each in all stem:[k!] possible ways.
 
 So stem:[|L| = B(m, k)k!].
-We use the notation stem:[((m), (k)) i= (m(m-1)...(m-k+1))/(k!)]
+We use the notation stem:[((m), (k)) = (m(m-1)...(m-k+1))/(k!)]
 
 [NOTE]
 ====
@@ -104,7 +104,7 @@ A *bijection* (or 1-to-1 correspondence) from a set stem:[S] to a set stem:[T] i
 stem:[f: S -> T] that is:
 
 - 1-1, which means stem:[f(s_1) = f(s_2) -> s_1 = s_2] (injection)
-- onto,  which means stem:[AA t in T EE s in S f(s) = t] (surjection)
+- onto,  which means stem:[AA t in T; EE s in S; f(s) = t] (surjection)
 
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
 
@@ -155,15 +155,15 @@ be equal
 
 [stem]
 ++++
-AA m in ZZ_(>=0) AA x (1+x)^m = sum _k(k=0) ^m (((m), (k)) x^k
+AA m in ZZ_(>=0) AA x (1+x)^m = sum _k(k=0) ^m ((m), (k)) x^k
 
 "Proof: " (1+x)^m = (1+x)(1+x)...(1+x) = (x^0 + x^1) (x^0 + x^1) ... (x^0 + x^1)
 
-= x^(0+0+0+...) + x^(1+0+0+...) + ... " ("2^n" terms"
+= x^(0+0+0+...) + x^(1+0+0+...) + ... " ("2^n" terms")
 ++++
 
 Our bijection from last class, which mapped the subsets of a set with size m to
-stem:[{0, 1}^m]] applies here, since the exponent terms fit that pattern.
+stem:[{0, 1}^m] applies here, since the exponent terms fit that pattern.
 
 The number of terms in which the exponent adds up to exactly k is the number
 of elements of T with exactly k 1s. By our bijection, we know that the number
@@ -301,7 +301,7 @@ If stem:[S] is infinite, stem:[Phi_s(x)] is an infinite sum. This will be a *for
 Let stem:[S] be a finite set with weight funtion stem:[w] (so stem:[Phi_s(x)] is a polynomial).
 Then
 
-. stem:[Phi_s'(1) = |S|]
+. stem:[Phi_s(1) = |S|]
 . stem:[Phi_s'(1)] is the total weight of all elements in stem:[S].
 
 Proof:
@@ -314,7 +314,7 @@ Phi_s(1) = sum _(sigma in S) 1^(w(sigma)) = |S|
 
 Phi_s'(x) = sum _(sigma in S) w(sigma) x^(w(sigma)-1)
 
-Phi_s'(x) = sum _(sigma in S) w(sigma)
+Phi_s'(1) = sum _(sigma in S) w(sigma)
 ++++
 ****
 
@@ -405,12 +405,12 @@ We often write stem:[1+x+x^2+x^3+... = 1/(1-x)] or stem:[(1-x)^-1].
 
 If stem:[B(x)] has a constant coefficient stem:[b_0 = 0], then stem:[A(B(x))] is a fps.
 
-We can write stem:[B(x) = x(C(x))] where stem:[C(x) = b_1 + b_2x + b_3x^2 + ...].
+We can write stem:[B(x) = xC(x)] where stem:[C(x) = b_1 + b_2x + b_3x^2 + ...].
 Then stem:[A(B(x)) = a_0 + a_1xC(x) + a_2x^2C^2(x) + a_3x^3C^3(x) + ...].
 We need to verify that for every stem:[n], the coefficient stem:[\[x^n\]A(B(x))] of
 stem:[x^n] is a finite number.
 
-But stem:[\[x^n\]A(B(x)) = \[x^n\](a_0 + a_xxC(x) + ... + a_n x^n C^n(x))].
+But stem:[\[x^n\]A(B(x)) = \[x^n\](a_0 + a_x xC(x) + ... + a_n x^n C^n(x))].
 This is a finite number, since we have a finite sum of products of fps.
 
 Hence stem:[A(B(x))] is an fps.
@@ -420,7 +420,7 @@ the coefficients are finite. That's the thing that'll throw you off.
 
 .Theorem
 ****
-A fps stem:[A(x)] has an inverse if and only if the constant coefficient stem:[a_0] != 0].
+A fps stem:[A(x)] has an inverse if and only if the constant coefficient stem:[a_0 != 0].
 ****
 
 Proof: Suppose stem:[C(x)] is the inverse of stem:[A(x)]. Then stem:[A(x)C(x)] = 1.
@@ -436,7 +436,7 @@ stem:[sum_(i>=0)(xB(x))^i]. So stem:[A(x)] has an inverse stem:[1/a_0 sum_(i>=0)
 
 [NOTE, caption="Exercise"]
 ====
-Show that if stem:[A(x) has an inverse, then it's unique.
+Show that if stem:[A(x)] has an inverse, then it's unique.
 ====
 
 .Theorem
@@ -487,3 +487,29 @@ So remember: when finding coefficients for fps, here's your toolbox:
 * stem:[(1-x)^-1 = sum _(k>=0) x^k] 
 * Finite Geometric Series (above)
 * Binomial Theorem
+
+
+== May 17
+
+=== Sum and Product Lemmas
+
+.Sum Lemma
+****
+If stem:[S = AuuB] where stem:[AnnB = O/],
+[stem]
+++++
+Phi_S(x) = Phi_A(x) + Phi_B(x).
+++++
+****
+
+.Product Lemma
+****
+If stem:[A_1, A_2] are sets with weight functions stem:[w_1, w_1],
+and stem:[S = A_1xxA_2] has stem:[w((a_1, a_2)) = w_1(a_1)w_2(a_2)],
+[stem]
+++++
+Phi_S(x) = Phi_(A_1)(x)Phi_(A_2)(x)
+++++
+****
+
+Proofs are pretty simple.
