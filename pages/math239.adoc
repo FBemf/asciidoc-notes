@@ -108,7 +108,6 @@ stem:[f: S -> T] that is:
 
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
 
-[NOTE, caption="example"]
 ====
 There is a bijection stem:[f] from stem:[S =] the set of all subsets of stem:[{1, ..., m}]
 to stem:[T = {0, 1}^m] (where exponentiation means repeated Cartesian product). Proof
@@ -263,7 +262,6 @@ Phi_s(x) = sum _(k>=0} a_k x^k
 
 where stem:[a_k] is the number of elements of stem:[S] of weight stem:[k].
 
-[NOTE, caption="Example"]
 ====
 Let stem:[S =] the set of all subsets of stem:[{1, 2, ..., m}].
 Let stem:[w(sigma) = |sigma|]. Then
@@ -274,7 +272,6 @@ Phi_s(x) = sum _(k>=0) ((m),(k)) x^k = sum _(k = 0) ^m ((m),(k)) x^k = (1+x)^m
 ++++
 ====
 
-[NOTE, caption="Example"]
 ====
 [stem]
 ++++
@@ -318,7 +315,6 @@ Phi_s'(1) = sum _(sigma in S) w(sigma)
 ++++
 ****
 
-[NOTE, caption="Example"]
 ====
 stem:[S] is the set consisting of 5 nickels, 12 dimes and 3 quarters. Let stem:[w(sigma)=] the 
 value of stem:[sigma], in cents.
@@ -384,7 +380,6 @@ stem:[A(x)B(x) = 1 = 1+0x+0x^2+...].
 An fps stem:[A(x) = sum _(i>=0) b_i x^i] has *inverse* stem:[B(x) = sum _(i>=0) b_i x^i] if 
 stem:[A(x)B(x) = 1]. We write stem:[B(x) = A^-1(x)] or stem:[B(x) = 1/(A(x)].
 
-[NOTE, caption="Example"]
 ====
 [stem]
 ++++
@@ -434,7 +429,6 @@ So stem:[1-xB(x)] is stem:[xB(x)] substituted into stem:[1-x], and we know stem:
 has an inverse stem:[sum_(i>=0} x^i]. Hence we know stem:[1-xB(x)] has an inverse
 stem:[sum_(i>=0)(xB(x))^i]. So stem:[A(x)] has an inverse stem:[1/a_0 sum_(i>=0) x^i B^i(x)].
 
-[NOTE, caption="Exercise"]
 ====
 Show that if stem:[A(x)] has an inverse, then it's unique.
 ====
@@ -513,3 +507,176 @@ Phi_S(x) = Phi_(A_1)(x)Phi_(A_2)(x)
 ****
 
 Proofs are pretty simple.
+
+== May 22
+
+=== How to solve an enumeration problem
+
+
+. Describe a set stem:[S] and a weight function stem:[w: S -> ZZ_(>=0)}
+such that the answer to the problem is "the number of elements of stem:[S]
+with weight stem:[n]".
+
+. Find the generating series stem:[Phi_S(x)] for stem:[S] with respect to
+stem:[w].
+
+. Find the coefficient stem:[[x^n\]Phi_S(x)]. This is the answer.
+
+====
+Let stem:[n] and stem:[k] be nonnegative integers, How many nonnegative integer
+solutions are there for stem:[t_1 + t_2 + ... + t_k = n]?
+
+Choose stem:[S = ZZ_(>=0) xx  ZZ_(>=0) xx  ZZ_(>=0) xx ... =  ZZ_(>=0)^k].
+Choose stem:[w(t_1, t_2, ..., t_k) = t_1 + ... + t_k].
+
+We know stem:[Phi_ZZ_(>=0) = 1 + x + x^2 + ... = 1/(1-x)] with respect to
+stem:[w_0(sigma) = sigma]. We can use the product lemma to get
+
+[stem]
+++++
+Phi_x(s) = (Phi_ZZ_(>=0)(x))^k = (1-x)^-k.
+++++
+
+Now,
+
+[stem]
+++++
+[x^n] (1-x)^-k = ((k+n-1),(k-1)).
+++++
+
+This solves our donut problem from the beginning.
+We want stem:[t_c + t_m + t_l + t_p = 12] -- 12 donuts
+from 4 types. And the answer is stem:[((15),(3)) = 455].
+
+====
+
+====
+Okay, same thing but there are only 3 cocolate and 5 maple donuts. So we start with
+
+[stem]
+++++
+S = {0,1,2,3} xx {0,2,3,4,5} xx ZZ_(>=0) xx ZZ_(>=0}.
+
+"Recall " Phi_{0,1,..., n}(x) = 1+x+x^2+...+x^n = (1-x^(n+1))/(1-x).
+++++
+
+So we get
+
+[stem]
+++++
+Phi_S(x) = ((1-x^4)/(1-x)) ((1-x^6)/(1-x)) (1/(1-x))^2 = (1-x^4-x^6+x^10)/(1-x)^4
+++++
+
+by the product lemma, and we end up with stem:[[x^12\] Phi_S(x) = 216] if we work
+it out.
+====
+
+=== Compositions of an Integer
+
+A *composition* of an integer stem:[n] with stem:[k] parts is a stem:[k]-tuple
+stem:[(t_1, t_2, ..., t_k)] of _positive_ integers such that stem:[t_1 + t_2 + ... + t_k = n].
+
+How many stem:[k]-part compositions of stem:[k] are there?
+
+Taking stem:[S] as stem:[ZZ_(>=1)^k], we have stem:[Phi_S(x) = (x/(1-x))^k].
+Expanding, we get stem:[((n-1),(k-1))].
+
+.A more complex composition problem
+====
+How many compositions of stem:[n] in stem:[k] parts are there where the stem:[i]th part
+stem:[k_i] is at least stem:[2i]?
+
+Solve in the same way.
+====
+
+== May 27
+
+=== Binary Strings
+
+A *binary string* is some stem:[k in {0,1}^n], such as stem:[(1,0,0,1,1,0)], which we write as
+stem:[100110].
+
+A typical question might be "how many binary strings of length stem:[n] are there, such that
+no substring stem:[11] appears?"
+
+We'll mostly be using the length of the string as the weight function.
+
+====
+If stem:[S =] the set of all binary strings, stem:[w(sigma)] is the length of stem:[sigma].
+
+Then the number of elements of stem:[S] of weight stem:[n] is stem:[2^n]. This gives us
+
+[stem]
+++++
+Phi_S(x) = 1+2x+4x^2+8x^3+... = 1/(1-2x)
+++++
+====
+
+Let stem:[A] and stem:[B] be sets of binary strings. For stem:[a in A] and stem:[b in B],
+of lengths stem:[k] and stem:[l] respectively, the string stem:[ab] is the *concatenation*
+of stem:[a] and stem:[b], and it has length stem:[k+l]. The *concatenation set*
+stem:[AB = {ab: a in a, b in B}].
+
+For instance, if stem:[A = {01, 00, 001}] and stem:[B = 1, 110}, then
+stem:[AB = {011, 01110, 001, 00110, 0011, 001110}. Note the obvious bijection;
+it is not always present in concatenation sets.
+
+An example without a bijection is stem:[A = {011, 01}] and stem:[B = {0, 10}].
+This gives us a set of only three elements, stem:[AB = {0110, 01110, 010}].
+Our bijection has two elements stem:[(011, 0}] and stem:[(01, 10)], which correspond
+to the same element of the concatenation set.
+
+A concatenation set stem:[AB] is considered *unambiguous* if, for every stem:[sigma in AB],
+there exists a _unique_ pair stem:[a in A, " " b in B] such that stem:[sigma = ab].
+You'll learn to love unambiguous sets, because ambiguous ones apparently suck.
+
+For a set stem:[A] of binary strings, we define another set
+stem:[A** = {epsilon}uuAuuA^2uuA^3uu...].
+We say stem:[A**] is unambiguous if for each stem:[sigma in A**], there exists a unique 
+stem:[k]-tuple stem:[(a_1,a_2,...,a_k) in A^k] such that stem:[sigma = a_1a_2...a_k].
+
+====
+Take the set stem:[A={00, 101, 11}].
+Show stem:[A**] is unambiguous. We use induction on the length of
+stem:[sigma in A**].
+
+Iff stem:[sigma] has length stem:[>0], and any shorter string in stem:[A**]
+has a unique representation:
+
+Consider stem:[sigma = a_1a_2...a_k] where stem:[a_i in A].
+If the first digit of stem:[sigma] is stem:[0], then stem:[a_1 = 00].
+If it is stem:[1], and is followed by a stem:[0], then stem:[a_1 = 101].
+If it is stem:[1], and is followed by a stem:[1], then stem:[a_1 = 11].
+
+Then stem:[a_1] is unambiguous.
+We then know inductively that stem:[a_2...a_k] is unique.
+
+stem:[square]
+
+NOTE: If we try this proof with an ambiguous set, like stem:[{011, 01, 10, 110}],
+we won't be able to say "if that stem:[1] is followed by a stem:[0]" because we're
+not guaranteed to not be bleeding into the next stem:[a_n] like we are in the above
+problem.
+====
+
+=== Product Lemma for Binary Strings
+
+Given sets of binary strings stem:[A] and stem:[B], suppose stem:[AB] is unambiguous.
+Then stem:[Phi_(AB)(x) = Phi_A(x) Phi_B(x)], where the weight function is length in all
+cases. Proof is same as the other Product Lemma.
+
+=== Star Lemma
+
+Let stem:[A] be a set of binary strings. Suppose stem:[A**] is unambiguous. Then
+
+[stem]
+++++
+Phi_(A**)(x) = 1/(1-Phi_A(x))
+++++
+
+where weight is length.
+
+Proof: stem:[A** = {epsilon}uuAuuAAuuAAAuu...].
+Since stem:[A**] is unambiguous, stem:[Phi_(A^k) = (Phi_A(x))^k] by PL
+and stem:[Phi_(A**) = sum _(k>=0) (Phi_(A^k)(x))^k]. Therefore
+stem:[Phi_(A**)(x) = 1/(1-Phi_A(x))].

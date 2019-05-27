@@ -173,9 +173,10 @@ contains code.
 A program called a *loader* puts a program into memory and sets the PC to the address of the first
 instruction.
 
-CS241 uses mips.twoints, and mips.array taht load programs into memory address 0.
+CS241 uses mips.twoints, and mips.array that load programs into memory address 0.
 
 We will talk about other addresses later.
+****
 
 
 === Fetch-Execute Cycle

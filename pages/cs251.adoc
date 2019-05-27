@@ -89,8 +89,11 @@ THere are two types: NMOS and PMOS.
 [options="header"]
 |===
 |Type |Resistence when control input is on |Resistence when control input is off
+
 |NMOS |Low |High
+
 |PMOS |High |Low
+|===
 
 PMOS is drawn like NMOS but with a circle on the control input.
 
