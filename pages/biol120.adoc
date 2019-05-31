@@ -1,4 +1,4 @@
-= BIOL 120: Plants
+ BIOL 120: Plants
 :showtitle:
 :page-navtitle: BIOL 120: Plants
 :page-root: ../
@@ -15,3 +15,237 @@ inhibits microtubule assembly and seeing if the thing still happens.
 
 You can similarly use actin-inhibiting drubs to detect actin fillament
 activity.
+
+== Study Notes: First Midterm
+
+What are the challenges faced by early land plants?
+
+* Harvesting light energy
+* Giving up the "sea of moderation"
+* Staying moist
+* Coping with gravity
+* "Divide and conquer"
+* Leveraging resources
+
+Cell Theory
+
+* Organisms are one or more cell
+* Cells are the building block of life
+* New cells come from old cells
+
+.Things to know
+|===
+| Thing | About the thing
+
+| Robert Hooke | Discovered cells in bark --- like a monk's cell
+| TEM | Transmission electron microscope; 200k zoom on thin slices
+| SEM | Scanning EM; 10k zoom on 3d surfaces
+
+| Matthias Schleiden | Discovered plant are cells
+| Theodor Schwann | Found that animals are cells
+
+| Protoplast | Everything except the cell wall
+| Cytoplasm | Everything inside the cell membrane
+| Apoplast | The space between plant cells outside the protoplast
+| Symplast | The cytoplasmic continuum between cells
+
+| Plastids | Plant organelles that make or store food or pigments
+| Leucoplasts | Colourless plastids
+| Amyloplasts | Starch-storing Leucoplasts
+| Elaioplasts | Oil-storing Leucoplasts
+
+| Chromoplasts | Pigment-storing plastids
+| Chloroplasts | A type of chromoplast, larger than mitochondria,
+two outer membranes, circular chromosome, full of thylakoids.
+
+| Vacuoles | 90% of the volume of a plant. Sequester toxins, ions,
+pigments, makes crystals, breaks down macromolecules and organelles.
+Important.
+
+| Tonoplast | Membrane around a vacoule
+
+| Microtubules | stem:[alpha] and stem:[beta] tubulin. Big boys.
+Move stuff. In flagella and cilia.
+
+| Phragmoplast | Microtubule that constructs cell plate out of vesicles
+| Microfilament | Actin chain to move stuff. Tiny.
+| Intermediate Filament | Medium cytoskeleton fibre. Includes nuclear lamins.
+Less well-researched.
+
+| Plant cell wall | Made of cellulose microfibrils, 30% of a cell's dry weight.
+*Primary* wall is just outside plasma membrane, *secondary* is between plasma
+membrane and primary cell wall. Secondary is reinforced with lignin.
+Also contains hemicelluloses, pectins, glycoproteins.
+
+| Plasmodesmata | Tiny strands of cytoplasm connecting cells to form symplast.
+Only certain sizes of molecule can pass through, but that can be altered
+with viral "movement proteins."
+
+| Lignin | A woody component that strengthens the cellulose in cell walls.
+*Not in bryophytes.*
+
+| Euglena | Algae; 1 long, 1 short flagella. Eye spot, pellicle,
+3-membrane chloroplast. Sometimes has a gullet. Stores carbs
+as *paramylon*, which is like starch.
+
+| Pellicle | Plasma membrane with underlying spiral strips around the cell.
+
+| Chromophyta | Also yellow-green algae. Mostly: freshwater, unicellular (some
+colonial), two flagella in opposite directions, fragmentation & spores. Rare
+sexual reproduction w/ oogonia and antheridia.
+
+| Brown algae | Multicellular, heteromorphic generations, good fertilizer.
+Makes *algin* (ice cream, latex paint, regulates water behaviour), iodine.
+
+| Red aglae | Complex life cycles, agar (moistness, cosmetics)
+ and carageenan, dulse and nori.
+
+| Green algae | Stores starch in *pyrenoids* inside chloroplasts.
+Unicellular, colonial, multicellular. Some terrestrial.
+ 
+| Coleochaete a| A green algae, probably an indirect ancestor of land plants.
+Shares:
+
+* Parenchyma-like cells
+* Cell plate
+* Phragmoplasts
+* A protective covering for zygotes
+* Lignin-like compound
+
+| Chara | Green algae, mineralized cell walls (stoneworts).
+In addition to some of the Coleochaete stuff, shares
+apical growth and lateral branches.
+
+| Gametophyte | Haploid life stage.
+| Sporophyte | Diploid life stage.
+
+| Antheridium | Male gametangia
+| Archegonium | Female gametangia
+
+| Paraphyses | Unicellular strands among moss antheridia
+| Calyptra | Top of archegonium flips off & froms this cap
+of sporophyte in moss
+
+| Homosporous | Producing only one type of spore. Most SVPs.
+| Heterosporous | Two types of spore: mega- and microspores,
+made by mega- and microsporangia, respectively. Some SVPs are like this.
+
+| Enation | A small, leaflike, nonvascularized bump on a stem.
+
+| Rhizome | An underground stem thing that gives rise to stems and roots.
+
+| Microphyll | Like an enation, but vascularized.
+
+| Sporophyll | Sporangium-bearing leaf
+| Strobulus | A cluster of sporophylls
+
+| Ligule | A lil leafy flap covering a joint
+
+|===
+
+=== Bryophytes
+
+* Mosses, liverworts, hornworts
+
+* Has alternation of generations
+* Came onto land bc of rising oxygen (became ozone) filtering out UV
+* Needs water, but can hibernate without it
+* Photosynthetic cells mixed with non-photosynthetic
+* Mostly dead cells that hold 20x dry weight in water
+* Antimicrobial. Similar to green algae. Approx. 1:1 diploid:haploid
+* Can reproduce asexually by fragmentation
+
+Similarities between bryophytes and green algae:
+
+* Cellulosic walls
+* Similar cell division
+* Phytochrome pigment
+* Chlorophyll a & b, carotenoids
+* Thylakoid grana
+* Hornworts have pyrenoids
+
+Bryophyte similarities to vascular plants:
+
+* Waxy cuticle
+* Protected male & female reproductive structures
+* Multicellular embryo protected in female parent
+* Makes spores by meiosis
+* Sporangia and Gametangia protected by sterile cell layer
+* Stores food as starch
+* Stomata & transpiration
+
+Bryophyte differences from vascular plants:
+
+* Thalli instead of leaves
+* Rhizoids like roots, but only anchor
+* Hydroids conduct water
+* Occasionally Leptoids conduct food
+
+Liverworts:
+
+* Phylum Hepaticophyta
+* Flattened, lobed thalli
+* Spores germinate to make protonema (short filament gametophyte)
+* Unicellular rhizoids. Archegonia hang down, antheridia protrude up
+* Reproduce asexually with *gemmae* --- tiny lens-shaped pieces of tissue
+that become detached from the thallus.
+* Elaters develop in the sporophyte w/ spores
+
+Hornworts:
+
+* A pyrenoid in the chloroplast
+* Fragmentation sometimes
+* Hornlike sporophytes w/ meristem in base (foot)
+
+Moss:
+
+* Peat, rock and true mosses
+* Bladelike unicellular leaves, not lobed
+* Numerous chloroplasts per cell
+* Big dead watery cells, small green photosynthetic cells
+* Stemlike axis, no xylem of phloem
+* Antheridia on short stalks, unicellular walls, diflagellar sperms
+* Useful for:
+** Soil amendment, remediation
+** Fuel
+** Clean wounds, make diapers
+
+=== Seedless vascular plants
+
+* Ferns and shit
+* Big damn deal ~350mya
+* Developed xylem and phloem
+* Real leaves, roots
+* Sporophyte is dominant
+
+Psilotophypa -- Whisk Ferns
+
+* Dichotomous branching stems
+* No leaves or roots
+* Enations
+* Sporangia fused in 3s at tips of short branches
+* Gametophytes develop from spores underground
+
+Lycophyta -- Ground Pines, Spike Mosses, Quillworts
+
+* Collectively called Club mosses
+* Microphylls
+* Lycopodium -- Ground Pine
+** Leaves < 1cm
+** Simple or branched stems, arising from rhizomes
+** Sporangia in axils of sporophylls
+** In some species, sporophylls have no chlorophyll,
+are smaller, and are clustered into strobili
+** Gametophytes sometimes look like small underground carrots,
+sometimes are surface-level and green
+* Selaginella -- Spike mosses
+** Tropical
+** Branch more than ground pines
+** Leaves have a ligule
+** Heterosporic
+** Endosporic gametophyte development
+** Megaspores become many-celled female gametophytes
+** Microspores become basically just an antheridium--
+male gametophyte
+* Equisetophyta -- asdf
+
