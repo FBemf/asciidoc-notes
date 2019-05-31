@@ -103,7 +103,6 @@ Little o is true by log rules.
 Big O is implied by little o.
 Big Omega is false because it's mutually exclusive with little o.
 Little omega is false because it implies big Omega.
-++++
 ===
 
 We can also use the contrapositive:
