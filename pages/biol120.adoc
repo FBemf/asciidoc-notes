@@ -1,4 +1,4 @@
- BIOL 120: Plants
+= BIOL 120: Plants
 :showtitle:
 :page-navtitle: BIOL 120: Plants
 :page-root: ../
@@ -37,7 +37,7 @@ Cell Theory
 |===
 | Thing | About the thing
 
-| Robert Hooke | Discovered cells in bark --- like a monk's cell
+| Robert Hooke | Discovered cells in bark -- like a monk's cell
 | TEM | Transmission electron microscope; 200k zoom on thin slices
 | SEM | Scanning EM; 10k zoom on 3d surfaces
 
@@ -127,8 +127,11 @@ apical growth and lateral branches.
 of sporophyte in moss
 
 | Homosporous | Producing only one type of spore. Most SVPs.
-| Heterosporous | Two types of spore: mega- and microspores,
-made by mega- and microsporangia, respectively. Some SVPs are like this.
+| Heterosporous | Two types of spore produced by sporophyte: mega- and microspores,
+made by mega- and microsporangia, respectively. Some SVPs are like this,
+all seed plants are.
+
+| Sporocyte | Cell that gives rise to spore via meiosis
 
 | Enation | A small, leaflike, nonvascularized bump on a stem.
 
@@ -140,6 +143,32 @@ made by mega- and microsporangia, respectively. Some SVPs are like this.
 | Strobulus | A cluster of sporophylls
 
 | Ligule | A lil leafy flap covering a joint
+
+| Elater| Lil stringy thing on a sperm. Not a flagellum.
+
+| Megaphyll | Fern leaf, probably evolved through Telome theory
+| Telome Theroy a| The way that branches probably became megaphylls.
+. Overtopping (equal branches became longer + shorter)
+. Planation (branches arrange into a plane)
+. Syngenesis (webbing forms between branches)
+
+| Sorus | Stalked sporangia form bundles on the underside
+of fern leaves called sori.
+| Indusium | A membrane that may protect a sorus
+| Annulus | A ring of thick cells around a sorus
+| Prothallus | A fern gametophyte. One cell thick,
+have archegonia and antheridia. Dies shortly after
+sporophyte is born.
+
+| Endosporic Development | When the gametophyte starts growing inside the spore.
+
+| Integument | A membrane wrapping something. Surrounds megasporangium in
+conifers, where it has a pore called a micropyle.
+
+| Monoecious | Both types of sporangium present on the same plant.
+| Diecious | Types of sporangium present different plants.
+
+| Tracheid | Long cells in xylem that help transport water.
 
 |===
 
@@ -187,7 +216,7 @@ Liverworts:
 * Flattened, lobed thalli
 * Spores germinate to make protonema (short filament gametophyte)
 * Unicellular rhizoids. Archegonia hang down, antheridia protrude up
-* Reproduce asexually with *gemmae* --- tiny lens-shaped pieces of tissue
+* Reproduce asexually with *gemmae* -- tiny lens-shaped pieces of tissue
 that become detached from the thallus.
 * Elaters develop in the sporophyte w/ spores
 
@@ -247,5 +276,70 @@ sometimes are surface-level and green
 ** Megaspores become many-celled female gametophytes
 ** Microspores become basically just an antheridium--
 male gametophyte
-* Equisetophyta -- asdf
+* Equisetophyta -- Horsetails and Scouring Rushes
+** Branched & unbranched forms, < 1.3m tall
+** Branches in whorls, scalelike leaves in whorls
+** Stomata in grooves between ribs
+** Hollow central stem cavity
+** Silica on walls of stem epidermal cells
+** Can be asexual by rhizome fragementation
+** Strobili at tips of stems with sporangia
+** Spores with 4 ribbon-like elaters
+** Used for scouring and sharpening because of silica
+* Polypoddiophyta
+** 1cm to 25m, vary heavily
+** Fern leaves are megaphylls called fronds
+** Require water to reproduce
+** Most successful SVPs
+** No secondary growth
+** Ornamental, edible rhizomes, fold medicine.
+Fronds to thatch houses, weave baskets.
 
+=== Gymnosperms
+
+Oldest known seeds. Seeds have a protective coat,
+supply of food, and can remain dormant in bad conditions.
+
+Gymnosperms have exposed seeds (gymnos=naked) produced on
+surface of sporophylls or strobuli, not in fruit.
+
+Airborne pollen means no water needed. Also, we have secondary
+growth of vascular tissue now.
+
+Sporangia + megaphylls is thought to have led to seeds. Endosporic
+development w/ the gametophyte growing inside the spore protects
+the gametophyte.
+
+All seed plants are heterosporous.
+
+* Pinophyta -- Conifers
+** Papery pollen cones make pollen w/ air sacs to add buoyancy
+** Megaspores in the big woody cones
+** Seed cones mature over two years
+** No antheridium, sperm have no flagella
+** Male and female cones develop on same plant (monoecius),
+but at different locations
+** Largest group of gymnosperms
+** Largest and oldest individual plants
+** Have tracheids, so they don't freeze like angiosperms
+** Some don't make woody cones -- fleshy pseudo-fruits sometimes,
+or fleshy cones
+* Ginkgophyta -- Ginkgo
+** Only one living species
+** Dioecious
+** Fleshy smelly seed coat, multiflagellate sperm
+* Cycadophyta
+** Slow growth
+** Tall, do not branch
+** Dioecious
+* Gnetophyta
+** Have vessels in xylem, which makes them unique among gymnosperms
+** Shrubby "joint firs"
+** "Double fertilization"
+* Welwitschia
+** Only one species
+** SW African desert
+** Drought-tolerant taproot
+** Meristem at base of leaves
+** Dioecious
+** CAM photosynthesis
