@@ -24,8 +24,6 @@ TODO: Add in definitions for little o, theta, and the omegas.
 
 Prove that stem:[f(n) = 2n^2 + 3n + 11 in Omega(n^2)].
 
-TODO: all this asciimath needs hard returns...
-
 [stem]
 ++++
 EE c > 0, m_0 > 0 AA m >= m_0 cm^2 < 2m^2 + 3m + 11
