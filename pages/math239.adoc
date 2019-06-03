@@ -108,11 +108,11 @@ stem:[f: S -> T] that is:
 
 If stem:[f: S -> T] is a bijection, then stem:[|S| = |T|].
 
-====
+****
 There is a bijection stem:[f] from stem:[S =] the set of all subsets of stem:[{1, ..., m}]
 to stem:[T = {0, 1}^m] (where exponentiation means repeated Cartesian product). Proof
 is not complex.
-====
+****
 
 .Lemma
 ****
@@ -582,12 +582,12 @@ Taking stem:[S] as stem:[ZZ_(>=1)^k], we have stem:[Phi_S(x) = (x/(1-x))^k].
 Expanding, we get stem:[((n-1),(k-1))].
 
 .A more complex composition problem
-====
+****
 How many compositions of stem:[n] in stem:[k] parts are there where the stem:[i]th part
 stem:[k_i] is at least stem:[2i]?
 
 Solve in the same way.
-====
+****
 
 == May 27
 
@@ -676,7 +676,174 @@ Phi_(A**)(x) = 1/(1-Phi_A(x))
 
 where weight is length.
 
-Proof: stem:[A** = {epsilon}uuAuuAAuuAAAuu...].
+Proof: stem:[A** = {epsilon}uuAuuA AuuA A Auu...].
 Since stem:[A**] is unambiguous, stem:[Phi_(A^k) = (Phi_A(x))^k] by PL
 and stem:[Phi_(A**) = sum _(k>=0) (Phi_(A^k)(x))^k]. Therefore
 stem:[Phi_(A**)(x) = 1/(1-Phi_A(x))].
+
+== May 29
+
+[stem]
+++++
+Phi_({1}**) (x) = 1/(1-Phi_({1}) (x))
+++++
+
+This is trivial.
+
+The set of all binary strings is stem:[{1, 0}**]. Note that
+this means stem:[{1, 0}**] is unambiguous. Then we know the
+generating series for stem:[Phi_({0, 1}**) = 1/(1-2x)], by the
+star lemma.
+
+=== 0-Decomposition
+
+[stem]
+++++
+{0, 1}** = {1}**({0}{1}**)**
+++++
+
+and the RHS is unambiguous.
+
+.Proof
+****
+Let stem:[sigma in {0, 1]**]. Then stem:[sigma] has stem:[k >= 0] zeroes.
+Then stem:[sigma] has a unique expression as stem:[sigma = a_0 0a_1 0a_2 ... a_(k-1) 0 a_k],
+where each stem:[a] is a (possibly empty) string of stem:[1]s.
+
+Then stem:[a_0 in {1}**], and stem:[0a_i in {0}{1}**], for every stem:[1 <= i <= k]. stem:[square]
+****
+
+====
+How many binary strings of length stem:[n] are there that do not contain the substring stem:[11]?
+
+We know stem:[{0, 1}** = {1}** ({0}{1**)**]. Our set stem:[S = {epsilon, 1} ({0}{epsilon, 1})**]
+is a restriction of the stem:[0]-Decomposition, hence is unambiguous (weight is length).
+
+[stem]
+++++
+Phi_({epsilon, 1}) (x) = 1+x
+
+Phi_({0}) (x) = x
+++++
+
+Thus
+
+[stem]
+++++
+[Phi_S (x) = (1+x) 1/(1-x(1+x))]
+
+= (1+x)/(1-x-x^2)
+++++
+
+ by PL, *-L. The standard form to write a generating series as a *rational expression*
+is as a quotient of polynomials.
+====
+
+====
+If we wanted to solve for the generating series
+of all binary strings not containing stem:[000],
+we'd have to use the stem:[1]-decomposition instead
+of the stem:[0] decomposition.
+
+stem:[S = {epsilon, 0, 00} ({1} {epsilon, 0, 00})**
+====
+
+=== Block Decomposition
+
+A *block* in a binary string is a nonempty maximal substring of all stem:[0]s
+or all stem:[1]s. This gives us the *block composition theorem*,
+
+[stem]
+++++
+{0, 1}** = {1}**({0}{0}**{1}{1}**){0}**,
+++++
+
+where RHS is unambiguous. Proof is pretty trivial.
+
+====
+Find the generating series for all the binary strings where
+all blocks of zero have even length, and all block of one
+have odd length.
+
+[stem]
+++++
+{0, 1}** = {1}**({0}{0}**{1}{1}**){0}**
+
+S = ({epsilon}uu{1}{11}**)({00}{00}**{1}{11}**)**{00}**
+++++
+
+This definition of stem:[S] is unambiguous, since it's a restriction
+of the block decomposition. As usual with binary strings, stem:[w(sigma)=]
+length.
+
+[stem]
+++++
+Phi({1}{11}**)(x) = x + x^3 + x^5 + ... = x(1+x^2 + x^4 + ...) = x/(1-x^2)
+
+Phi({00}{00}**)(x) = x^2 + x^4 + x^6 + ... = x^2/(1-x^2)
+++++
+
+Then by the product lemma and star lemma,
+
+[stem]
+++++
+Phi_S(x) = (1+x)/(1-x^2) * 1/(1-(x^2/(1-x^2))(x/(1-x^2))) * (1/(10-x^2))
+
+= (1-x^2+x)/(1-x^2) * (1-x^2)^2/((1-x^2)^2 - x^3) * 1/(1-x^2)
+
+= (1+x-x^2)/(1-2x^2-x^3 + x^4)
+++++
+====
+
+====
+Find the generating series for the set of binary strings
+where each even block of zeroes is followed by a block
+of two ones.
+
+[stem]
+++++
+S = {1}*({00}{00}**{11} uu {0}{00}**{1}{1}**{0}{00}**
+++++
+
+This is unambiguous, since it's a restriction of the block decomposition.
+
+[stem]
+++++
+Phi_({00}{00}**)(x) = x^2/(1-x^2)
+
+Phi_({00}{00}**{11}) (x) = x^2/(1-x^2) * x^2
+
+Phi_({0}{00}**{1}{1}**) (x) = x/(1-x^2) * x/(1-x)
+
+Phi_({epsilon} uu {0}{00}**) (x) = 1+x/(1-x^2)
+
+Phi_S(x) = 1/(1-x)* 1/(1-(x^4/(1-x^2) + x^2/((1-x)(1-x^2)))) * (1+x/(1-x^2))
+
+= (1+x-x^2)/(1-x-2x^2+x^3-x^4+x^5)
+++++
+====
+
+====
+Find the generating series for the set of binary strings
+which do not contain the substring stem:[11100].
+
+[stem]
+++++
+{0, 1}** = {1}**({0}{0}**{1}{1}**){0}**
+
+S = {0}** ({1}{1}** {0}{0}**  \\ {111}{1}** {00}{0}**)** {1}**
+++++
+
+Restriction of block decomposition, so it's unambiguous.
+
+[stem]
+++++
+Phi_({1}{1}**{0}{0}**) (x) = Phi_M(x) + Phi_A(x)
+
+Phi_M (x) = (x/(1-x))^2 - (x^2/(1-x)) (x^2/(1-x)) " by PL"
+
+Phi_S(x) = (1/(1-x)) (1/(1-Phi_M(x))) (1/(1-x)) = EX " by PL, *L"
+
+= 1/(1-2x+x^5)
+++++
+====
