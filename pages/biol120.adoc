@@ -140,7 +140,7 @@ all seed plants are.
 | Microphyll | Like an enation, but vascularized.
 
 | Sporophyll | Sporangium-bearing leaf
-| Strobulus | A cluster of sporophylls
+| Strobulus | A cluster of sporophylls along a branch. Cones are this.
 
 | Ligule | A lil leafy flap covering a joint
 
@@ -169,6 +169,55 @@ conifers, where it has a pore called a micropyle.
 | Diecious | Types of sporangium present different plants.
 
 | Tracheid | Long cells in xylem that help transport water.
+
+| Annual/Biennial/Perennial | An angiosperm with a 1 year/2 year/many year
+lifecycle (respectively)
+
+| Magnoliopsida a| Synonym for dicot.
+* Two cotyledons
+* Flower bits in multiples of 4 or 5
+* Leaves with branchiing network of veins
+* Vascular cambium and cork
+* Vascular bundles in stem in ring
+* Pollen grains with 3 apertures
+
+| Liliopsida a| Synonym for monocot.
+* One cotyledons
+* Flower bits in multiples of 3
+* Leaves with parallel veins
+* No vascular cambium and cork
+* Vascular bundles in stem scattered
+* Pollen grains with 1 aperture
+
+| Embryonic primordium | Thing that turns into a flower bud.
+| Peduncle | A flower stem
+| Pedicel | A branchlet of a peduncle
+| Receptacle | Swollen end of peduncle
+| Anther | Male sporophyte in a flower
+| Anther | Male sporophyte in a flower
+| Carpel | Female sporophyte in a flower
+| Pistil | Collection of one or more carpels
+| Stigma | Tip of pistil, to capture pollen
+| Style | Tube part of pistil, leading down to ovary from stigma
+| Ovary | Egg-making part of pistil. Becomes the fruit
+| Sepal | Outermost leafy petal that used to enclose bud
+| Petal | You're probably not familiar with these. Like sepals,
+but soft and inside
+| Tepal | Sepal or petal. Useful when you can't tell the difference
+| Calyx | All the sepals on a flower, taken collectively
+| Corolla | All the petals on a flower, taken collectively
+| Inflorescence | A bundle of flowers, like a pineapple or a sunflower.
+| Hypanthium | Basal parts of calyx and corolla fused into a cup
+| Superior ovary | Ovary on top of receptacle, other flower parts
+around base of ovary.
+| Inferior ovary | Ovary right under receptacle, other flower parts attached
+to top.
+| Hypogynous flower | Has a superior ovary
+| Epigynous flower | Has an inferior ovary
+| Perigynous flower | Flower parts attached to corolla tube of fused petals,
+creating a floral tube not attached to the ovary.
+| Complete flower | Calyx, corolla, stamens, pistil
+| Perfect flower | Stamens and pistil
 
 |===
 
@@ -343,3 +392,107 @@ or fleshy cones
 ** Meristem at base of leaves
 ** Dioecious
 ** CAM photosynthesis
+
+=== Angiosperms
+
+Magnoliophyta
+
+* Heterosporous
+* Female gametophyte wrapped in sporophyte
+and only a few cells large
+* Male gametophyte is a pollen cell w/ 3 nuclei
+
+Flowering plants
+
+* Co-evolved with pollinators
+* Cross-polination made them very adaptable
+* Populations can be very spread-out
+* Flowers evolved from leaves
+** Leaves that make spores became sporophylls
+** Sporophylls arange themselves into strobuli
+** Sporophylls with microsporangia became stamens
+*** The leaf part of a leaf with microsporangia shrank
+into a filament, leaving the spores on top, enclosed
+in an anther
+** Sporophylls with megasporangia became carpels
+*** A leaf with megasporangia folded over and sealed up
+*** Separate carpels of primitive flowers with simple pistils
+fused together to form compound pistils
+** Leaves became sepals and petals
+
+All flowers have at least one or more of the four types
+of modified leaves (carpel, stamen, petal, sepal), and
+all flowers have at least one type of sporophyll (carpel
+or stamen).
+
+Selected flowers
+
+* Dicots
+** Buttercup (Ranunculaceae)
+*** Almost all herbaceous
+*** Varying number of pistils
+*** Many stamens
+*** Several to many simple pistils,
+superior ovaries
+** Poppies (Papaveraceae)
+*** Numerous stamens, single pistil
+*** Milky or coloured sap
+*** Opium = white fluid from capsules
+** Roses (Rosaceae)
+*** >3000 species
+*** Basal parts fused into cup (hypanthium)
+*** Peaches, apples, strawberries
+** Legumes (Fabaceae)
+*** Sometimes radial, sometimes bilateral
+*** Stamens fused into tube
+*** Peas, beans, peanuts, alfalfa
+** Pumpkins (Cucurbitaceae)
+*** Herbaceous vines
+*** Unisexual flowers w/ fused petals
+*** Female flowers have 3 carpals
+*** Squashes, cucumbers, gourds
+** Sunflowers (Asteraceae)
+*** Dandelions, artechokes, lettuce, marigold, thistle
+*** Florets from a compact inflorescence
+* Monocots
+** Grass (Poaceae)
+*** Flowers wind-pollinated, highly specialized
+*** Calyx & corolla are tiny scales
+*** Flowers protected in boat-shaped bracts (specialized leaves)
+*** Stigmas exposed and feathery
+*** Contains every cereal grain, sugar cane
+** Lillies (Liliaceae)
+*** Big flowers, multiples of 3
+*** Sepals & petals look similar
+*** Lilies, daffodils, asparagus, Aloe, onions, garlic,
+*bowstring hemps
+** Orchids
+*** Largest flowering plant family
+*** Widely distributed, diverse habitats
+*** Many live on tree bark
+*** Sometimes very close ties between pollinator and flower
+*** Vanilla
+
+Evolutionary trends in angiosperms
+
+* Stamens and carpels become less leaflike
+* Carpels fuse into compound carpels
+* Sepals and petals become less and less alike
+* Number of floral parts goes down, becomes fixed
+* Floral parts go from spirals to whorls
+* Number of whorls goes down from 4 toward 1
+* Radial -> Bilateral symmetry
+
+Trends of specialization in flowers
+
+* Primitive flowering plants
+** Simple elaves
+** Numerous, spirally aranged unfused parts
+** Radially symmetrical
+** Stamens and pistils
+** Superior ovary
+* Specialized flowering plants
+** Fewer, definite number of flower parts
+** Bilateral symmetry
+** Reduction & fusion of parts
+** Inferior ovary
