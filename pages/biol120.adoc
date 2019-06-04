@@ -148,6 +148,7 @@ all seed plants are.
 
 | Megaphyll | Fern leaf, probably evolved through Telome theory
 | Telome Theroy a| The way that branches probably became megaphylls.
+
 . Overtopping (equal branches became longer + shorter)
 . Planation (branches arrange into a plane)
 . Syngenesis (webbing forms between branches)
@@ -174,6 +175,7 @@ conifers, where it has a pore called a micropyle.
 lifecycle (respectively)
 
 | Magnoliopsida a| Synonym for dicot.
+
 * Two cotyledons
 * Flower bits in multiples of 4 or 5
 * Leaves with branchiing network of veins
@@ -182,6 +184,7 @@ lifecycle (respectively)
 * Pollen grains with 3 apertures
 
 | Liliopsida a| Synonym for monocot.
+
 * One cotyledons
 * Flower bits in multiples of 3
 * Leaves with parallel veins
