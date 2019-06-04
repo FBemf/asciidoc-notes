@@ -5,7 +5,7 @@
 :toc:
 :stem:
 
-== May 6th: Intro
+== Intro
 
 The two subjects this course covers are Enumeration and Graph Theory.
 We're gonna do 5 weeks of Enumeration, and 7 weeks of Graph Theory.
@@ -71,9 +71,8 @@ How many elements of stem:[S] have weight stem:[k]? (for any stem:[k])
 Answer is stem:[((m), (k))].
 
 
-== May 8th
 
-=== n choose k
+== n choose k
 
 The number stem:[B(m, k)] of k-subsets of stem:[{1, 2, ..., m}]
 is stem:[(m(m-1)...(m-k+1))/(k!)].
@@ -98,7 +97,7 @@ This expression is defined for all stem:[K >= 0 in ZZ] and all stem:[m in RR]
 - stem:[0!] is the *empty product*, which is 1. So stem:[((m), (0)) = 1]
 ====
 
-=== Bijections
+== Bijections
 
 A *bijection* (or 1-to-1 correspondence) from a set stem:[S] to a set stem:[T] is a functon
 stem:[f: S -> T] that is:
@@ -148,9 +147,8 @@ be equal
 ****
 
 
-== May 10th
 
-=== Binomial Theorem:
+== Binomial Theorem:
 
 [stem]
 ++++
@@ -238,9 +236,8 @@ for each stem:[n in ZZ_(>=0)], the number of elements stem:[sigma in S] with
 stem:[w(sigma) = n] is finite.
 
 
-== May 13th
 
-=== Weight functions and indeterminates
+== Weight functions and indeterminates
 
 A *weight function* on a set stem:[S] is a function stem:[w: S -> ZZ_(>=0)] such that,
 for every stem:[n >= 0], stem:[{sigma in S: w(sigma)=n}] is finite.
@@ -331,7 +328,7 @@ Phi_s'(1) = 25 + 120 + 75 = 220
 ++++
 ====
 
-=== Formal power series
+== Formal power series
 
 .Definiton
 ****
@@ -373,9 +370,8 @@ We write stem:[a_i=\[x^i\]A(x)].
 stem:[A(x)B(x) = 1 = 1+0x+0x^2+...].
 ****
 
-== May 15th
 
-=== Inverses of Power Series
+== Inverses of Power Series
 
 An fps stem:[A(x) = sum _(i>=0) b_i x^i] has *inverse* stem:[B(x) = sum _(i>=0) b_i x^i] if 
 stem:[A(x)B(x) = 1]. We write stem:[B(x) = A^-1(x)] or stem:[B(x) = 1/(A(x)].
@@ -396,7 +392,7 @@ B(x) = 1-x
 We often write stem:[1+x+x^2+x^3+... = 1/(1-x)] or stem:[(1-x)^-1].
 ====
 
-=== Composition (or Substitution) of Formal Power Series
+== Composition (or Substitution) of Formal Power Series
 
 If stem:[B(x)] has a constant coefficient stem:[b_0 = 0], then stem:[A(B(x))] is a fps.
 
@@ -483,9 +479,8 @@ So remember: when finding coefficients for fps, here's your toolbox:
 * Binomial Theorem
 
 
-== May 17
 
-=== Sum and Product Lemmas
+== Sum and Product Lemmas
 
 .Sum Lemma
 ****
@@ -508,9 +503,8 @@ Phi_S(x) = Phi_(A_1)(x)Phi_(A_2)(x)
 
 Proofs are pretty simple.
 
-== May 22
 
-=== How to solve an enumeration problem
+== How to solve an enumeration problem
 
 
 . Describe a set stem:[S] and a weight function stem:[w: S -> ZZ_(>=0)}
@@ -571,7 +565,7 @@ by the product lemma, and we end up with stem:[[x^12\] Phi_S(x) = 216] if we wor
 it out.
 ====
 
-=== Compositions of an Integer
+== Compositions of an Integer
 
 A *composition* of an integer stem:[n] with stem:[k] parts is a stem:[k]-tuple
 stem:[(t_1, t_2, ..., t_k)] of _positive_ integers such that stem:[t_1 + t_2 + ... + t_k = n].
@@ -589,9 +583,8 @@ stem:[k_i] is at least stem:[2i]?
 Solve in the same way.
 ****
 
-== May 27
 
-=== Binary Strings
+== Binary Strings
 
 A *binary string* is some stem:[k in {0,1}^n], such as stem:[(1,0,0,1,1,0)], which we write as
 stem:[100110].
@@ -659,13 +652,13 @@ not guaranteed to not be bleeding into the next stem:[a_n] like we are in the ab
 problem.
 ====
 
-=== Product Lemma for Binary Strings
+== Product Lemma for Binary Strings
 
 Given sets of binary strings stem:[A] and stem:[B], suppose stem:[AB] is unambiguous.
 Then stem:[Phi_(AB)(x) = Phi_A(x) Phi_B(x)], where the weight function is length in all
 cases. Proof is same as the other Product Lemma.
 
-=== Star Lemma
+== Star Lemma
 
 Let stem:[A] be a set of binary strings. Suppose stem:[A**] is unambiguous. Then
 
@@ -681,7 +674,6 @@ Since stem:[A**] is unambiguous, stem:[Phi_(A^k) = (Phi_A(x))^k] by PL
 and stem:[Phi_(A**) = sum _(k>=0) (Phi_(A^k)(x))^k]. Therefore
 stem:[Phi_(A**)(x) = 1/(1-Phi_A(x))].
 
-== May 29
 
 [stem]
 ++++
@@ -695,7 +687,7 @@ this means stem:[{1, 0}**] is unambiguous. Then we know the
 generating series for stem:[Phi_({0, 1}**) = 1/(1-2x)], by the
 star lemma.
 
-=== 0-Decomposition
+== 0-Decomposition
 
 [stem]
 ++++
@@ -748,7 +740,7 @@ of the stem:[0] decomposition.
 stem:[S = {epsilon, 0, 00} ({1} {epsilon, 0, 00})**
 ====
 
-=== Block Decomposition
+== Block Decomposition
 
 A *block* in a binary string is a nonempty maximal substring of all stem:[0]s
 or all stem:[1]s. This gives us the *block composition theorem*,
@@ -845,5 +837,137 @@ Phi_M (x) = (x/(1-x))^2 - (x^2/(1-x)) (x^2/(1-x)) " by PL"
 Phi_S(x) = (1/(1-x)) (1/(1-Phi_M(x))) (1/(1-x)) = EX " by PL, *L"
 
 = 1/(1-2x+x^5)
+++++
+====
+
+====
+Find the generating series with respect to length for
+binary strings without the substring stem:[010].
+
+[stem]
+++++
+{0, 1}** = {1}**({0}{1}**)** " (zero decomp)"
+
+S_0 = {1}**({0}({epsilon}uu{11}{1}**)**
+++++
+
+But this doesn't quite cover every case.
+Consider that none of these strings can ever end in stem:[01].
+So we switch it to 
+
+[stem]
+++++
+S = {1}**({0}({epsilon}uu{11}{1}**))**({epsilon, 01})
+++++
+
+This expression is unambiguous, because stem:[S_0] is unambiguous,
+and no element of stem:[S_0] can end in stem:[01] (so we know any
+element ending with stem:[01] reduces to an element of stem:[S_0]
+without the terminal stem:[01]).
+
+Skipping a few steps, we end up with
+
+[stem]
+++++
+Phi_S(x) = 1/(1-x) (1/(1-x(1+x^2/(1-x))))(1+x^2)
+
+= (1+x^2)/(1 - 2x + x^2 - x^3
+++++
+====
+
+== Recursive Decomposition
+
+We express a set of binary strings in terms of itself.
+
+====
+Example: stem:[S = {0, 1}**]. Every string stem:[sigma in S] satisfies
+exactly one of the following:
+
+* stem:[sigma = epsilon]
+* stem:[sigma] starts with a stem:[1] and continues with an element of stem:[S]
+* stem:[sigma] starts with a stem:[0] and continues with an element of stem:[S]
+
+So stem:[S = {epsilon} uu {1}S uu {0}S].
+
+By SL, PL,
+
+[stem]
+++++
+Phi_S(x) = 1+x Phi_S(x) + x Phi_S(x)
+++++
+
+====
+
+====
+
+stem:[S =] the set of all binary strings not containing the substring
+stem:[00].
+
+Then every stem:[sigma in S] satisfies one of:
+
+* stem:[sigma in epsilon]
+* stem:[sigma = 0]
+* stem:[sigma] starts with 1 and continues with an element of stem:[S]
+* stem:[sigma] starts with stem:[01] and continues with an element of stem:[S]
+
+Then stem:[S = {epsilon} uu {0} uu {1}S uu {01}S], which is unambiguous. Then
+
+[stem]
+++++
+Phi_S(x) = 1+x+x Phi_S(x) + x^2 Phi_S(x)
+
+Phi_S(x) = (1+x)/(1-x-x^2)
+++++
+====
+
+====
+Let stem:[L] be the set of bunary strings with no substring stem:[11010].
+
+Let stem:[M] be the set of binary strings with exactly one substring
+stem:[11010], occuring at the end.
+
+Claim:
+
+. stem:[{epsilon} uu L{0, 1} = LuuM]
+. stem:[L{11010} = M]
+
+and these expressions are unambiguous.
+
+Proof: Cleary stem:[epsilon sub L sub LuuM]. Also, stem:[L{0, 1} sub LuuM],
+since adding one digit to the end of stem:[sigma in L] gives an element
+which either still has no substring stem:[11010], or which has one right at
+the end.
+
+Suppose stem:[sigma in LuuM]. If stem:[sigma in L] and stem:[sigma != epsilon],
+then we can remove its last digit and get another string in stem:[L].
+
+If stem:[sigma in M], then removing its last digit ruins the only substring stem:[11010]
+in stem:[sigma], hence hte result is in stem:[L]. Hence the first claim holds.
+
+Now, suppose stem:[sigma in L{11010}]; say stem:[sigma = sigma_1 11010]. There's
+a risk that stem:[sigma] contains some instance stem:[11010] other than the one
+right at the end -- a chance that the first few characters in stem:[11010] combine
+with the last few characters of stem:[sigma] to form another stem:[11010].
+
+It turns out that this isn't an issue, since no strict substring of stem:[11010] starting
+at the beginning is equal to a substring of stem:[11010] ending at the end. There's nowhere
+else that that stem:[11] can go. So we're safe on this count. The prof actually wrote
+out all the cases of "the first stem:[n] characters stem:[!=] the last stem:[n] characters,"
+so it seems like this is the recommended way to do that check.
+
+Then, by SL and PL, we have
+
+[stem]
+++++
+1+2xPhi_L(x) = Phi_L(x) + Phi_(x)
+
+x^5 Phi_L(x) = Phi_M(x)
+++++
+
+which leads to
+
+[stem]
+++++
+Phi_L(x) = 1/(1-2x+x^5)
 ++++
 ====
