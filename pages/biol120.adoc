@@ -209,6 +209,7 @@ but soft and inside
 | Tepal | Sepal or petal. Useful when you can't tell the difference
 | Calyx | All the sepals on a flower, taken collectively
 | Corolla | All the petals on a flower, taken collectively
+| Perianth | Calyx + Corolla. Like what a tepal is to petals and sepals.
 | Inflorescence | A bundle of flowers, like a pineapple or a sunflower.
 | Hypanthium | Basal parts of calyx and corolla fused into a cup
 | Superior ovary | Ovary on top of receptacle, other flower parts
