@@ -507,7 +507,7 @@ Proofs are pretty simple.
 == How to solve an enumeration problem
 
 
-. Describe a set stem:[S] and a weight function stem:[w: S -> ZZ_(>=0)}
+. Describe a set stem:[S] and a weight function stem:[w: S -> ZZ_(>=0)]
 such that the answer to the problem is "the number of elements of stem:[S]
 with weight stem:[n]".
 
