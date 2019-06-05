@@ -698,7 +698,7 @@ and the RHS is unambiguous.
 
 .Proof
 ****
-Let stem:[sigma in {0, 1]**]. Then stem:[sigma] has stem:[k >= 0] zeroes.
+Let stem:[sigma in {0, 1}**]. Then stem:[sigma] has stem:[k >= 0] zeroes.
 Then stem:[sigma] has a unique expression as stem:[sigma = a_0 0a_1 0a_2 ... a_(k-1) 0 a_k],
 where each stem:[a] is a (possibly empty) string of stem:[1]s.
 
