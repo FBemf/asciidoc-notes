@@ -354,7 +354,7 @@ Oldest known seeds. Seeds have a protective coat,
 supply of food, and can remain dormant in bad conditions.
 
 Gymnosperms have exposed seeds (gymnos=naked) produced on
-surface of sporophylls or strobuli, not in fruit.
+surface of sporophylls or strobili, not in fruit.
 
 Airborne pollen means no water needed. Also, we have secondary
 growth of vascular tissue now.
@@ -413,7 +413,7 @@ Flowering plants
 * Populations can be very spread-out
 * Flowers evolved from leaves
 ** Leaves that make spores became sporophylls
-** Sporophylls arange themselves into strobuli
+** Sporophylls arange themselves into strobili
 ** Sporophylls with microsporangia became stamens
 *** The leaf part of a leaf with microsporangia shrank
 into a filament, leaving the spores on top, enclosed
