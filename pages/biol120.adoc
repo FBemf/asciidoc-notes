@@ -518,9 +518,6 @@ Trends of specialization in flowers
 ** Bilateral symmetry
 ** Reduction & fusion of parts
 ** Inferior ovary
-* Multiple fruits
-** Literally just multiple fruits together; comes from an inflorescence.
-** Pineapples, mulberries, figs
 
 Notes on fruits & seeds
 
@@ -537,6 +534,9 @@ Fleshy fruits:
 * Aggregate fruits
 ** A single flower with many pistils becomes an aggregate fruit with many seeds
 ** Raspberries, blackberries, strawberries
+* Multiple fruits
+** Literally just multiple fruits together; comes from an inflorescence.
+** Pineapples, mulberries, figs
 
 Dry fruits:
 
