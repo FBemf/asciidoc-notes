@@ -494,7 +494,7 @@ Phi_S(x) = Phi_A(x) + Phi_B(x).
 .Product Lemma
 ****
 If stem:[A_1, A_2] are sets with weight functions stem:[w_1, w_1],
-and stem:[S = A_1xxA_2] has stem:[w((a_1, a_2)) = w_1(a_1)w_2(a_2)],
+and stem:[S = A_1xxA_2] has stem:[w(\(a_1, a_2\)) = w_1(a_1)w_2(a_2)],
 [stem]
 ++++
 Phi_S(x) = Phi_(A_1)(x)Phi_(A_2)(x)
