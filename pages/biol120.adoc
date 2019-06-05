@@ -543,7 +543,7 @@ Dry fruits:
 * Dry seeds
 ** Dehiscent (split open to release seeds)
 *** Grouped by the way they split
-*** Capsules (like poppies, star anise) consist of at least two carpels
+*** Capsules (like poppies) consist of at least two carpels
 ** Indehiscent (do not split)
 *** Maple seeds, grains, sunflower seeds, acorns & nuts
 
