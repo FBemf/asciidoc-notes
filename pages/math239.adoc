@@ -971,3 +971,220 @@ which leads to
 Phi_L(x) = 1/(1-2x+x^5)
 ++++
 ====
+
+== Finding Coefficient in Rational Expressions
+
+Reall the GS for binary strings w/ no substring stem:[11] is
+
+[stem]
+++++
+Phi_S(x) = (1+x)/(1-x-x^2)
+++++
+
+We want to find stem:[a_n = [x^n\] Phi_S(x)]. Recall we can get
+a recurrence relation for stem:[{a_n}].
+
+[stem]
+++++
+sum_(n>=0) a_nx^n = (1+x)/(1-x-x^2)
+
+sum_(n>=0) a_nx^n - sum_(n>=0) a_nx^(n+1) - sum_(n>=0) a_nx^(n+2) = 1+x
+    
+sum_(n>=0) a_nx^n - sum_(n>=1) a_(n-1)x^n - sum_(n>=2) a_(n-2)x^n = 1+x
+++++
+
+The coefficient of stem:[x^0] tells us stem:[a_0 = 1], stem:[a_1 - a_0 = 1
+:. a_1 = 2], stem:[a_n - a_(n-1) - a_(n-2) = 0]. 
+
+So we have a recurrence relation:
+
+[stem]
+++++
+{(a_0 = 1),(a_1 = 2),(a_n = a_(n-1) + a_(n-2) AA n >= 2):}
+++++
+
+Can we find a closed-form expression for this? Sure!
+
+Suppose stem:[alpha = (1+sqrt x)/2] and stem:[beta = (1-sqrt x)/2].
+
+Then stem:[(1-alpha x)(1-beta x) = 1-x-x^2)]. And so
+
+[stem]
+++++
+Phi_S(x) = (1+x)/((1-alpha x)(1-beta x))
+
+= (1/2 + 3/(2 sqrt 5))/(1-alpha x) (1/2 - 3/(2 sqrt 5))/(1 - beta x)
+++++
+
+and we can plug in whatever number we want to get the coefficient.
+
+[stem]
+++++
+[x^n]Phi_S(x) = (1/2 + 3/(2 sqrt 5) " " [x^n] (sum _(n>=0) alpha^nx^n)
++ (1/2 - 3/(2 sqrt 5)) " " [x^n] (sum _(n>=0) beta^nx^n)
+++++
+
+This looks _absolutely nuts,_ but it actually provides integer solutions
+at integer values of stem:[n]. _YEAH, I KNOW._
+
+stem:[alpha] and stem:[beta] are the roots of the *reciprocal polynomial*
+to stem:[1-x-x^2], which is stem:[y^2 = y-1].
+
+Since stem:[y^2 = y-1 = (y-alpha)(y-beta)], we can plug in stem:[y = 1/x] and
+get stem:[1-x-x^2 = (1-alpha x)(1- beta x)]. We will return to this
+later, with more rigour.
+
+.Partial Fractions
+****
+Let stem:[g(x)] be a polynomial with constant coefficients. Let stem:[Theta_1]
+through stem:[Theta_k] be distinct complex nmbers and stem:[m_1] through stem:[m_k]
+be positive integers such that:
+
+[stem]
+++++
+g(x) = (1-Theta_1x)^(m_1) ... (1-Theta_kx)^(m_k).
+++++
+
+Let stem:[f(x)] be a polynomial with degree stem:[< "deg"(g(x))].
+Then there exist polinomials stem:[q_1(x) ... q_k(x)] with
+stem:["deg"(q_1(x)) < m_i] for each stem:[i] such that
+
+[stem]
+++++
+(f(x))/(g(x)) = (q_1(x))/(1-Theta_1x)^(m_1) + ... + (q_k(x))/(1-Theta_kx)^(m_k).
+++++
+
+Proof in notes; really more algebraic than combinatoric.
+****
+
+====
+Find stem:[A], stem:[B], and stem:[C] for this polynomial.
+
+[stem]
+++++
+(1-6x+18x^2)/((1-3x)^2(1-2x)) = (Ax+B)/(1-3x)^2 + C/(1-2x)
+
+1-6x+18x^2 = (Ax+B)(1-2x)+C(1-3x)^2
+
+x=1/3 => 1 = 1+2-2 = (A/3+B)1/3 => 9 = A+3B
+
+x=1/2 => 5/2 = C/4 => C = 10
+
+x=0 => 1=B+C => B = -4 => A= 36
+++++
+====
+
+== Recurrence Relations
+
+A (homogenous linear) *recurrence relation* for a sequence
+stem:[{a_n}_(n>=0}] is an expression of the form
+
+[stem]
+++++
+a_n + q_1a_(n-1) + q_2a_(n-2) + ... + q_ka_(n-k) = 0
+++++
+
+(where stem:[q_1] through stem:[q_k] are constants)
+where the *initial conditions* stem:[a_0] through stem:[a_(k-1)]
+are given.
+
+We saw that the sequence of coefficients stem:[{a_n}_(n>=0)] of
+a rational expression stem:[(f(x))/(g(x))] (where stem:[f(x)] and
+stem:[g(x)] are polynomials, stem:[g(x)] has constant coefficients)
+has a HLRR defining it. 
+
+We also saw that the sequence stem:[{a_n}_(n>=0}] can be found
+explicitly using partial fractions.
+
+Can we use these facts to solve recurrence relations in general?
+Yeah.
+
+****
+Fix stem:[k>=1]. Let stem:[{c_n}_(n>=0)] be a sequence such that for all
+stem:[n>=k]
+
+[stem]
+++++
+AA n>=k " " c_n + q_1c_(n-1) + q_2c_(n-2) + ... + q_kc_(n-k) = 0
+++++
+
+Let stem:[g(x) = 1 + q_1x + q_2x^2 + ... + q_kx^k]. Then
+there exists a polynomial stem:[f(x)] with stem:["deg"(f(x))<k]
+such that
+
+[stem]
+++++
+C(x) = sum_(n>=0) c_nx^n = (f(x))/(g(x))
+++++
+
+Proof: Consider stem:[g(x)C(x)]. We want to show that this
+is a polynomial of degree stem:[<k], i.e. show
+
+[stem]
+++++
+AA n>=k " " [x^n]g(x)C(x) = 0
+
+[x^n]g(x)C(x) = [x^n](1+q_1x+q_2x^2 + ... + q_kx^k
+sum_(n>=0) c_nx^n
+
+= [x^n](sum_(n>=0) c_nx^n + q_1 sum_(n>=0) c_(n-1)x^n
++ q_2 sum_(n>=0) c_(n-2)x^n + ... + q_k sum_(n>=0) c_(n-k)x^n
+
+= c_n + q_1c_(n-1) + q_2c_(n-2) + ... + q_kc_(n-k) = 0
+" for all " n>=k
+
+square
+++++
+****
+
+Now we can use partial fractions to get the following theorem:
+
+****
+For each recurrence relation 
+stem:[a_n + q_1a_(n-1) + q_2a_(n-2) + ... + q_ka_(n-k) = 0]
+where stem:[a_0] through stem:[a_(k-1)] are given,
+the *characteristic polynomial* of stem:[{a_n}_(n>=0)] is
+
+[stem]
+++++
+c(y) = y^k + q_1y^(k-1) + ... + q_(k-1)y + q_k
+++++
+
+Let stem:[beta_1 ... beta_j] be the distinct roots of
+the characteristic polinomial c(y), with multiplicities
+stem:[m_1 ... m_j] respectively, i.e.
+
+[stem]
+++++
+c(y) = (y-beta_1)^(m_1) + (y-beta_2)^(m_2) + ... + (y-beta_j)^(m_j)
+++++
+
+Then the solution to the recurrence for stem:[{a_n}_(n>=0)] is 
+stem:[a_n = P_1(n)beta_1^n + P_2(n)beta_2^n +  P_j(n)beta_j^n],
+where stem:[P_i(n)] is a polynomial in stem:[n] of degree stem:[<= m_i-1],
+for stem:[1<=i<=j].
+
+The coefficients of the polynomials stem:[P_i(n)] are chosen to fit the initial
+conditions stem:[a_0 ... a_k-1].
+
+For example, for the sequence stem:[{a_n}_(n>=0)] defined by
+
+[stem]
+++++
+{(a_n = 4a_(n-1) - 5a_(n-2)+2a_(n-3)),
+(a_0 = 4),(a_1 = 9),(a_2=17,):}
+++++
+
+write stem:[a_n-4a_(n-1)+5a_(n-2)-2a_(n-3) = 0].
+The char. polyn is stem:[c(y) = y^3 - 4y^2 + 5y - 2].
+Find the roots of stem:[c(y)]; observe that stem:[1]
+is a root, then do polyn division with it.
+
+You end up with stem:[c(y) = (y-1)(y^2-3y+2) = (y-1)^2(y-2)].
+
+The solution is stem:[a_n = (A+B_n)1^n + C2^n] with constant stem:[A, B, C].
+
+We can then solve this algebraically from the initial conditions of
+stem:[a_0, a_1, a_2].
+
+****
