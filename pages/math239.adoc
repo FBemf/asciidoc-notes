@@ -494,7 +494,7 @@ Phi_S(x) = Phi_A(x) + Phi_B(x).
 .Product Lemma
 ****
 If stem:[A_1, A_2] are sets with weight functions stem:[w_1, w_1],
-and stem:[S = A_1xxA_2] has stem:[w((a_1, a_2)) = w_1(a_1)w_2(a_2)],
+and stem:[S = A_1xxA_2] has stem:[w(a_1, a_2) = w_1(a_1) + w_2(a_2)],
 [stem]
 ++++
 Phi_S(x) = Phi_(A_1)(x)Phi_(A_2)(x)
@@ -507,7 +507,7 @@ Proofs are pretty simple.
 == How to solve an enumeration problem
 
 
-. Describe a set stem:[S] and a weight function stem:[w: S -> ZZ_(>=0)}
+. Describe a set stem:[S] and a weight function stem:[w: S -> ZZ_(>=0)]
 such that the answer to the problem is "the number of elements of stem:[S]
 with weight stem:[n]".
 
@@ -610,8 +610,8 @@ of lengths stem:[k] and stem:[l] respectively, the string stem:[ab] is the *conc
 of stem:[a] and stem:[b], and it has length stem:[k+l]. The *concatenation set*
 stem:[AB = {ab: a in a, b in B}].
 
-For instance, if stem:[A = {01, 00, 001}] and stem:[B = 1, 110}, then
-stem:[AB = {011, 01110, 001, 00110, 0011, 001110}. Note the obvious bijection;
+For instance, if stem:[A = {01, 00, 001}] and stem:[B = {1, 110}], then
+stem:[AB = {011, 01110, 001, 00110, 0011, 001110}]. Note the obvious bijection;
 it is not always present in concatenation sets.
 
 An example without a bijection is stem:[A = {011, 01}] and stem:[B = {0, 10}].
@@ -698,7 +698,7 @@ and the RHS is unambiguous.
 
 .Proof
 ****
-Let stem:[sigma in {0, 1]**]. Then stem:[sigma] has stem:[k >= 0] zeroes.
+Let stem:[sigma in {0, 1}**]. Then stem:[sigma] has stem:[k >= 0] zeroes.
 Then stem:[sigma] has a unique expression as stem:[sigma = a_0 0a_1 0a_2 ... a_(k-1) 0 a_k],
 where each stem:[a] is a (possibly empty) string of stem:[1]s.
 

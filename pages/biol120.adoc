@@ -148,6 +148,7 @@ all seed plants are.
 
 | Megaphyll | Fern leaf, probably evolved through Telome theory
 | Telome Theroy a| The way that branches probably became megaphylls.
+
 . Overtopping (equal branches became longer + shorter)
 . Planation (branches arrange into a plane)
 . Syngenesis (webbing forms between branches)
@@ -174,6 +175,7 @@ conifers, where it has a pore called a micropyle.
 lifecycle (respectively)
 
 | Magnoliopsida a| Synonym for dicot.
+
 * Two cotyledons
 * Flower bits in multiples of 4 or 5
 * Leaves with branchiing network of veins
@@ -182,6 +184,7 @@ lifecycle (respectively)
 * Pollen grains with 3 apertures
 
 | Liliopsida a| Synonym for monocot.
+
 * One cotyledons
 * Flower bits in multiples of 3
 * Leaves with parallel veins
@@ -206,6 +209,7 @@ but soft and inside
 | Tepal | Sepal or petal. Useful when you can't tell the difference
 | Calyx | All the sepals on a flower, taken collectively
 | Corolla | All the petals on a flower, taken collectively
+| Perianth | Calyx + Corolla. Like what a tepal is to petals and sepals.
 | Inflorescence | A bundle of flowers, like a pineapple or a sunflower.
 | Hypanthium | Basal parts of calyx and corolla fused into a cup
 | Superior ovary | Ovary on top of receptacle, other flower parts
@@ -218,6 +222,24 @@ to top.
 creating a floral tube not attached to the ovary.
 | Complete flower | Calyx, corolla, stamens, pistil
 | Perfect flower | Stamens and pistil
+
+| Exocarp | Fruit skin
+| Endocarp | Inner boundary in fruit around seeds
+| Mesocarp | The stuff between the exo- and endocarp
+| Pericarp | Exo + Endo + Mesocarp; everything but the seeds
+
+| Cotyledon | A food storage organ; a seed leaf
+| Embryo | Cotyledon + Plantlet
+| Plumule | Embryo shoot
+| Epicotyl | Stem above cotyledon attachment
+| Hypocotyl | Stem below cotyledon attachment
+| Radicle | Tip of embryo that becomes root
+| Germination | The resumption of seed growth after dormancy.
+Can happen due to mechanical abrasion, thawing and freezing, or
+being soaked. Deliberately causing germination is *scarification.*
+Requires water, oxygen, light (or its absence), proper temerature.
+| Vivipary | When a seed has no period of dormancy. The embryo will
+continue to grow while on the parent.
 
 | Vegetative reproduction | Asexual reproduction
 | Apomixis | Seeds are produced asexually with no pollination.
@@ -351,7 +373,7 @@ male gametophyte
 ** Strobili at tips of stems with sporangia
 ** Spores with 4 ribbon-like elaters
 ** Used for scouring and sharpening because of silica
-* Polypoddiophyta
+* Polypodiophyta
 ** 1cm to 25m, vary heavily
 ** Fern leaves are megaphylls called fronds
 ** Require water to reproduce
@@ -366,7 +388,7 @@ Oldest known seeds. Seeds have a protective coat,
 supply of food, and can remain dormant in bad conditions.
 
 Gymnosperms have exposed seeds (gymnos=naked) produced on
-surface of sporophylls or strobuli, not in fruit.
+surface of sporophylls or strobili, not in fruit.
 
 Airborne pollen means no water needed. Also, we have secondary
 growth of vascular tissue now.
@@ -400,7 +422,7 @@ or fleshy cones
 * Gnetophyta
 ** Have vessels in xylem, which makes them unique among gymnosperms
 ** Shrubby "joint firs"
-** "Double fertilization"
+** "Double fertilization" -- two sperms fertilize one egg
 * Welwitschia
 ** Only one species
 ** SW African desert
@@ -425,7 +447,7 @@ Flowering plants
 * Populations can be very spread-out
 * Flowers evolved from leaves
 ** Leaves that make spores became sporophylls
-** Sporophylls arange themselves into strobuli
+** Sporophylls arange themselves into strobili
 ** Sporophylls with microsporangia became stamens
 *** The leaf part of a leaf with microsporangia shrank
 into a filament, leaving the spores on top, enclosed
@@ -513,6 +535,40 @@ Trends of specialization in flowers
 ** Reduction & fusion of parts
 ** Inferior ovary
 
+Notes on fruits & seeds
+
+Fleshy fruits:
+
+* Simple fruits (one pistil)
+** Drupes
+*** Apricots, peaches, dates. Pit fruits
+** Berries
+*** True berries w/ thin soft skin like tomatoes, bananas, blueberries
+*** Pepo: Pumpkins, cucumbers, etc. with the thick rind
+*** Hesperidium: thick leathery oil skin. Citrus.
+*** Pomes (apples, pears, friends). Not *really* fruit bc flesh is petals
+* Aggregate fruits
+** A single flower with many pistils becomes an aggregate fruit with many seeds
+** Raspberries, blackberries, strawberries
+* Multiple fruits
+** Literally just multiple fruits together; comes from an inflorescence.
+** Pineapples, mulberries, figs
+
+Dry fruits:
+
+* Dry seeds
+** Dehiscent (split open to release seeds)
+*** Grouped by the way they split
+*** Capsules (like poppies) consist of at least two carpels
+** Indehiscent (do not split)
+*** Maple seeds, grains, sunflower seeds, acorns & nuts
+
+Seeds can be distributed:
+
+* By air, like poplar or maple seeds
+* By water, if they float
+* By animals, if they are eaten or if they adhere to the animal like burrs
+
 Plant lifecycles and reproductive structures:
 
 * Asexual reproduction is very successful in stable environments.
@@ -570,5 +626,3 @@ take place unless the pollen is compatible (same species)
 to make a triploid endosperm (double fertilization)
 * Endosperm serves as food for the plant
 * Sometimes endosperm is even >3n, like in lillies, which end up being 5n
-
-
