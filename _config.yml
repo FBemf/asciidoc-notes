@@ -7,10 +7,13 @@ exclude:
   - Gemfile.lock
   - Rakefile
 asciidoc: {}
+keep_files:
+  - images
 asciidoctor:
   base_dir: :docdir
   safe: unsafe
   attributes:
     - idseparator=_
     - source-highlighter=coderay
+    - imagesdir=/images
     # - icons=font

@@ -219,6 +219,22 @@ creating a floral tube not attached to the ovary.
 | Complete flower | Calyx, corolla, stamens, pistil
 | Perfect flower | Stamens and pistil
 
+| Vegetative reproduction | Asexual reproduction
+| Apomixis | Seeds are produced asexually with no pollination.
+Embryo comes from diploid nutritive cel or other diploid cell in ovule
+instead of zygote.
+| Parthenocarpy | Fruits develop from ovaries with unfertilized eggs.
+
+| Organ | Plants have 4 organs: roots, stem, leaves, flowers
+| Tissue | A group of cells doing a similar function
+| Meristem | Permanent region of continuous growth and active cell division.
+| Apical meristem | Meristem at the tip of a shoot or root
+| Primary mersitem a| Develops from apial meristem
+
+* Protoderm (makes dermal tissue)
+* Ground meristem (makes ground tissue) 
+* Procambium (makes vascular tissue)
+
 |===
 
 === Bryophytes
@@ -496,3 +512,63 @@ Trends of specialization in flowers
 ** Bilateral symmetry
 ** Reduction & fusion of parts
 ** Inferior ovary
+
+Plant lifecycles and reproductive structures:
+
+* Asexual reproduction is very successful in stable environments.
+* Sexual is good at adapting to changing/new environments
+* Bryophytes
+** Produce one type of spore that makes separate male and
+female gametophytes
+** Sporophyte is dependent, gametophyte independent
+* Ferns and SVPs
+** Single type of spore makes a bisexual gametophyte
+** Sporophyte and gametophyte independent
+** Gametophyte much smaller
+* Gym- and angiosperms
+** Heterosporic
+** Sporophyte independent, gametophyte microscopic and dependent
+
+Gymnosperms
+
+* Microsporocyte does meiosis
+* Each microspore becomes a pollen grain with 4 cells
+** Two prothallial cells that we don't know what they're for
+** A generative cell -- divides and makes sterile cell and
+spermatogenous cell, which makes 2 sperm cells
+** A tube cell, which makes the pollen tube
+
+. Pollen lands on drops of pollination fluid on ovulate scales
+. Evaporation brings pollen through microphyle into contact
+with the megasporangium, where it germinates
+. This stimulates the development of the megasporocyte
+. A month later, meiosis makes 4 megaspores
+. Three degenerate and one survives and becomes the gametophyte,
+which makes 2-5 archegonia with an egg each
+. 15 months after pollinatiton, fertilization takes place
+. Only one sperm fertilizes, the other degenerates
+. Scales close after pollination
+
+Angiosperms
+
+. Anther makes microsporocytes
+. Each one does meiosis, makes 4 microspores,
+which each mitose into 2 cells (no prothallial cells)
+. Megasporangia in ovary surrounded by one or two integuments
+. Meiosis to make 4 megaspores; one survives
+. It makes 3 nuclear divisions to make 8 haploid nuclei
+.. Two move to the centre (central nuclei)
+.. Three cells then form at each end of the sac
+.. The cells closest to the micropyle (polar) make the egg and 2 synergids
+.. The other group (andipodals) is useless??
+
+* After pollination, further development of male gametophyte may not
+take place unless the pollen is compatible (same species)
+* Tube nucleus stays at tip of pollen tube; generative cell hangs back to split
+* Pollen tuble enters female gametophyte, busts up synergid, blows load
+* One sperm fertilizes the egg, the other unites with the polar nuclei
+to make a triploid endosperm (double fertilization)
+* Endosperm serves as food for the plant
+* Sometimes endosperm is even >3n, like in lillies, which end up being 5n
+
+

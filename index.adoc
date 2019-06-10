@@ -6,9 +6,6 @@
 
 Hey.
 This is the repository where I host all my course notes.
-It's http://creativecommons.org/licenses/by-sa/4.0/[`CC BY-SA 4.0`]
-licenced, so feel free to rehost them or something
-(noncomercially, with credit given).
 
 I set it up because I wanted a better way to have my notes around.
 Asciidoc struck me as a really neat markup

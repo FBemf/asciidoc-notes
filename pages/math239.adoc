@@ -1188,3 +1188,66 @@ We can then solve this algebraically from the initial conditions of
 stem:[a_0, a_1, a_2].
 
 ****
+
+====
+[stem]
+++++
+b_n = 4(2)^n - 3^n + (4n-1)(-1)^n
+++++
+
+Find a recurrence relation with initial conditions that define stem:[b_n]
+for all stem:[n>=0].
+
+Start off by finding a polynomial whose roots are stem:[2, 3, -1, -1].
+We use stem:[(y-2)(y-3)(y+1)(y+1) = y^4-3y^3-3y^2+7y+6].
+
+If this is the characteristic polynomial, then the recurrence for stem:[b_n]
+should be stem:[b_n - 3b_(n-1) + 7b_(n-2) +6b_(n-4) = 0] for stem:[n>>=4].
+
+We can sub stem:[0, 1, 2, 3] into the closed-form formula in order to 
+get values for them. We end up with
+
+|===
+|stem:[b_0] |stem:[2]
+|stem:[b_1] |stem:[2]
+|stem:[b_2] |stem:[14]
+|stem:[b_3] |stem:[-6]
+|===
+====
+
+== Graph Theory
+
+A *graph* stem:[G] consists of a finite set stem:[V] of *vertices*
+and a set stem:[E] of *edges*, where each edge in stem:[E] is a subset
+of stem:[V] of size stem:[2].
+
+For example, stem:[V = {a, b, c, d}] and
+stem:[E = {{a, b}, {a, c}, {c, d}, {b, d}}].
+
+We usually denote an edge stem:[{a, b}] as stem:[ab], because we're lazy.
+
+Graphs don't have loops stem:[{a, a}], because these aren't sets,
+they're multi-sets.
+They also don't have more than one of the same edge, as in
+stem:[{{a, b}, {a, b}}], for the same reason.
+
+A vertex stem:[v] is said to be *adjacent* to a vertex stem:[w] if
+stem:[vw in E]. We also say stem:[v] and stem:[w] are neighbours.
+We say the edge stem:[vw] joins stem:[v] and stem:[w].
+The number of neighbours a vertex has is its degree, written stem:["deg"(v)].
+A vertex of degree zero is an isolated vertex.
+A vertex stem:[v] is incident to each edge stem:[vw] and stem:[v] is an endpoint
+of stem:[vw].
+
+Two graphs are isomorphic if you could relabel the nodes and then they'd be equal.
+Meaning there's a function stem:[f: V(A) -> V(B)] called an isomorphism, satisfying:
+
+* stem:[f] is a bijection
+* stem:[f(a)f(b)] is an edge of stem:[B] iff stem:[ab] is an edge of stem:[A].
+
+[graphviz]
+....
+graph {
+    a -- b
+}
+....
