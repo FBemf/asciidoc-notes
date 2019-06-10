@@ -708,7 +708,7 @@ Then stem:[a_0 in {1}**], and stem:[0a_i in {0}{1}**], for every stem:[1 <= i <=
 ====
 How many binary strings of length stem:[n] are there that do not contain the substring stem:[11]?
 
-We know stem:[{0, 1}** = {1}** ({0}{1**)**]. Our set stem:[S = {epsilon, 1} ({0}{epsilon, 1})**]
+We know stem:[{0, 1}** = {1}** ({0}{1**})**]. Our set stem:[S = {epsilon, 1} ({0}{epsilon, 1})**]
 is a restriction of the stem:[0]-Decomposition, hence is unambiguous (weight is length).
 
 [stem]
@@ -727,7 +727,7 @@ Thus
 = (1+x)/(1-x-x^2)
 ++++
 
- by PL, *-L. The standard form to write a generating series as a *rational expression*
+by PL, *-L. The standard form to write a generating series as a *rational expression*
 is as a quotient of polynomials.
 ====
 
@@ -737,7 +737,7 @@ of all binary strings not containing stem:[000],
 we'd have to use the stem:[1]-decomposition instead
 of the stem:[0] decomposition.
 
-stem:[S = {epsilon, 0, 00} ({1} {epsilon, 0, 00})**
+stem:[S = {epsilon, 0, 00} ({1} {epsilon, 0, 00})**]
 ====
 
 == Block Decomposition
@@ -747,7 +747,7 @@ or all stem:[1]s. This gives us the *block composition theorem*,
 
 [stem]
 ++++
-{0, 1}** = {1}**({0}{0}**{1}{1}**){0}**,
+{0, 1}** = {1}**({0}{0}**{1}{1}**)**{0}**,
 ++++
 
 where RHS is unambiguous. Proof is pretty trivial.
