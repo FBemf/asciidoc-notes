@@ -1234,7 +1234,7 @@ stem:[{{a, b}, {a, b}}], for the same reason.
 A vertex stem:[v] is said to be *adjacent* to a vertex stem:[w] if
 stem:[vw in E]. We also say stem:[v] and stem:[w] are neighbours.
 We say the edge stem:[vw] joins stem:[v] and stem:[w].
-The number of neighbours a vertex has is its degree, written stem:["deg"(v)].
+The number of neighbours a vertex has is its *degree*, written stem:["deg"(v)].
 A vertex of degree zero is an isolated vertex.
 A vertex stem:[v] is incident to each edge stem:[vw] and stem:[v] is an endpoint
 of stem:[vw].
@@ -1251,3 +1251,168 @@ graph {
     a -- b
 }
 ....
+
+We represent isomorphism with the stem:[~=] symbol.
+
+====
+
+.G
+[graphviz]
+....
+graph {
+a -- b
+b -- c
+c -- a
+a -- e
+c -- d
+b -- g
+e -- d
+d -- g
+g -- e
+}
+....
+
+.H
+[graphviz]
+....
+graph {
+    3 -- 6
+    2 -- 5
+    5 -- 6
+    4 -- 3
+    3 -- 1
+    1 -- 4
+    4 -- 2
+    1 -- 5
+    6 -- 2
+}
+....
+
+We define stem:[f:V(G) -> V(H)] as
+
+[stem]
+++++
+{:(f(a)=4,f(d)=5),
+(f(b)=3,f(e)=2),
+(f(c)=1,f(g)=6):}
+++++
+
+proving that stem:[H ~= G].
+
+====
+
+Proving that stem:[H cancel ~= G] is a lot harder,
+and finding an algorithm to do it in any reasonable
+amount of time is an open question. We'll cover this
+more later.
+
+****
+Let stem:[G] be a graph. Then
+
+[stem]
+++++
+sum_(v in V(G)) "deg"(v) = 2 | E(G) |
+++++
+
+Proof: Since each edge in stem:[E(G)] has exactly two
+vertices, it is counted exactly twice by 
+stem:[sum_(v in V(G)) "deg"(v)].
+****
+
+We say a graph stem:[G] in which stem:["deg"(v) = r]
+for each stem:[v in V(G)] is *r-regular.*
+
+****
+Corollary (handshake lemma):
+
+For any graph stem:[G], the number of vertices of odd degrees
+is even.
+****
+
+== Special graphs
+
+The *complete graph* stem:[K_n] has stem:[n] vertices, and
+every 2-vertex subset of stem:[V(K_n)] is an edge.
+
+.stem:[K_5]
+[graphviz]
+....
+graph {
+    a -- b
+    a -- c
+    a -- d
+    a -- e
+    b -- c
+    b -- d
+    b -- e
+    c -- d
+    c -- e
+    d -- e
+}
+....
+
+stem:[K_n] is stem:[(n-1)]-regular.
+
+A graph stem:[G] is *bipartite* if there is a partition of stem:[V(G)]
+into two classes stem:[A] and stem:[B] such that each edge has a vertex
+in stem:[A] and a vertex in stem:[B].
+
+.A bipartite graph where stem:[A = {a_1, a_2, a_3}] and stem:[B = {b_1, b_2, b_3}]
+[graphviz]
+....
+graph {
+    a1 -- b1
+    a1 -- b2
+    a1 -- b3
+    a2 -- b1
+    a3 -- b2
+    a2 -- b2
+}
+....
+
+A *complete bipartite graph* is a bipartite graph where each vertex in stem:[A] has an
+edge with every vertex in stem:[B].
+
+.A complete bipartite graph
+[graphviz]
+....
+graph {
+    a1 -- b1
+    a1 -- b2
+    a1 -- b3
+    a2 -- b1
+    a2 -- b2
+    a2 -- b3
+}
+....
+
+The *n-cube* stem:[Q_n] has the vertex set stem:[{0, 1}^n].
+Any two vertices are joined by an edge if and only if
+their respective binary strings differ at only one position.
+So stem:[001] and stem:[101] are joined, but stem:[111] and
+stem:[100] are not.
+
+.stem:[Q_3]
+[graphviz]
+....
+graph {
+    000 -- 001
+    000 -- 010
+    000 -- 100
+    001 -- 011
+    001 -- 101
+    010 -- 110
+    010 -- 011
+    011 -- 111
+    100 -- 101
+    100 -- 110
+    101 -- 111
+    110 -- 111
+}
+....
+
+What might throw you off is that every stem:[Q_n] is bipartite.
+After all, elements with an even number of stem:[1]s only have
+edges with elements with an odd number of stem:[1]s, and vice-versa.
+
+Also, stem:[Q_n] is regular with degree stem:[n].
